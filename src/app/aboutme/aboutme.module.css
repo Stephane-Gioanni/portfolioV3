@@ -17,21 +17,12 @@
   min-height: 100vh;
 }
 
-.hero {
-  width: 100%;
-}
-
-.heroIntro {
-  font-size: 80px;
-  padding: 20px 0;
-}
-
 .section {
   width: 100%;
   margin: 20px 0;
   font-size: 40px;
   line-height: 50px;
-  padding: 60px;
+  padding: 0 100px;
   display: flex;
 }
 

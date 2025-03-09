@@ -48,7 +48,7 @@
   display: flex;
   justify-content: space-around;
   font-size: 30px;
-  width: 1200px;
+  width: 100%;
   flex-wrap: wrap;
   list-style: none;
 }
