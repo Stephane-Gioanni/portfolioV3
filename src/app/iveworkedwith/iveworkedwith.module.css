@@ -1,0 +1,156 @@
+.page {
+  font-family: "Inter Tight", sans-serif;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.bandeSelectedWork {
+  width: 100%;
+  height: 70px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Empêche le texte de dépasser visuellement */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.bandeSelectedWork p {
+  animation: slideText 20s linear infinite; /* Défilement fluide */
+  display: inline-block; /* Permet d'éviter les comportements inattendus */
+  font-size: 60px;
+}
+
+.workCards {
+  width: 100%;
+  margin: 20px 0;
+  font-size: 40px;
+  line-height: 50px;
+  padding: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.workWithList {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  width: 1200px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.workWithList li {
+  padding: 30px;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+}
+
+.workWithList span {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.contacts {
+  width: 800px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+}
+
+@keyframes slideText {
+  0% {
+    transform: translateX(-70%); /* Commence complètement à gauche */
+  }
+  100% {
+    transform: translateX(
+      calc(100vw + 10%)
+    ); /* Va jusqu'à la fin de l'écran + sa largeur */
+  }
+}
+
+.bandeAboutme {
+  position: relative;
+  width: 100%;
+  height: 70px; /* Ajuste la hauteur en fonction de tes besoins */
+
+  overflow: hidden; /* Empêche le texte de déborder */
+  padding-top: 4px;
+}
+
+.bandeAboutme p {
+  position: absolute;
+  white-space: nowrap; /* Empêche le texte de se couper */
+  font-size: 30px; /* Ajuste la taille du texte selon tes besoins */
+  animation: slideEffect 20s linear infinite; /* Animation infinie */
+  right: -10%; /* Commence en dehors de l'écran à droite */
+  border: 1px solid white;
+  padding: 10px 60px;
+  border-radius: 50px;
+}
+
+.bandeAboutme:hover {
+  background-color: white;
+  color: black;
+  padding-top: 3px;
+}
+
+@keyframes slideEffect {
+  0% {
+    right: -10%; /* Le texte commence à droite, hors de l'écran */
+  }
+  50% {
+    right: 50%; /* Le texte atteint le centre de l'écran */
+    transform: translateX(50%); /* Ajuste pour le centrer */
+  }
+  100% {
+    right: 100%; /* Le texte sort complètement à gauche */
+  }
+}
+
+.bandeContact {
+  width: 100%;
+  height: 70px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Empêche le texte de dépasser visuellement */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+
+.bandeContact p {
+  animation: slideText 25s linear infinite; /* Défilement fluide */
+  display: inline-block; /* Permet d'éviter les comportements inattendus */
+  border: 1px solid white;
+  padding: 10px 60px;
+  border-radius: 50px;
+}
+
+.bandeContact:hover {
+  background-color: white;
+  color: black;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 200px;
+}
