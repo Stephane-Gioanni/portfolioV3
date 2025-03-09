@@ -76,6 +76,12 @@ export default function Iveworkedwith() {
           <li>
             DB Group <span>(FR)</span>
           </li>
+          <li>
+            Pierre Augustin Rose <span>(FR)</span>
+          </li>
+          <li>
+            Must Group <span>(FR)</span>
+          </li>
           <li>and more..</li>
         </section>
       </main>
