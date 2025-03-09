@@ -65,7 +65,7 @@ export default function Iveworkedwith() {
             Chez Elles <span>(UK)</span>
           </li>
           <li>
-            Rhrude <span>(SP)</span>
+            Rhrude <span>(ES)</span>
           </li>
           <li>
             Baoli Group <span>(FR)</span>
