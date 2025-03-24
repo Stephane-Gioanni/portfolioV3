@@ -22,31 +22,46 @@
   margin: 20px 0;
   font-size: 40px;
   line-height: 50px;
-  padding: 20px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.workCard {
-  height: 470px;
-  width: 500px;
+.wordCardImageMozilla {
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+.workCardMozilla {
+  width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 100px 100px;
+  margin: 100px;
+}
+
+.workCard {
+  height: 470px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 100px 100px 140px 100px;
 }
 
 .workCardTop {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .wordCardLink {
   font-size: 24px;
   text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+  text-decoration: underline;
 }
 
 .wordCardLocation {
@@ -63,6 +78,7 @@
   border: 1px solid white;
   height: 360px;
   border-radius: 12px;
+  margin-bottom: 50px;
 }
 
 .contacts {

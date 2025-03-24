@@ -1,0 +1,18 @@
+.main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: contain;
+  background-color: black; /* Optionnel : pour remplir l’espace vide */
+}
+
+.fermer {
+  position: absolute;
+  color: white;
+  top: 50px;
+  right: 50px;
+}

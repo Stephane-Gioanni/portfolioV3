@@ -47,7 +47,7 @@ export default function Iveworkedwith() {
           </li>
 
           <li>
-            Barriere <span>(FR)</span>
+            Groupe Barrière <span>(FR)</span>
           </li>
           <li>
             Stockfish <span> (FR)</span>

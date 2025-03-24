@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+ 
 import styles from "./header.module.css";
 import Link from "next/link";
 

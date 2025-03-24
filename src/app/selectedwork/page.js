@@ -16,83 +16,134 @@ export default function Selectedwork() {
           <p>SelectedWork</p>
         </div>
         <section className={styles.workCards}>
-          <div className={styles.workCard}>
-            <div className={styles.workCardTop}>
-              <p>We are BMF</p>
-              <span className={styles.wordCardLocation}>Cannes Lions</span>
-              <span className={styles.design}>Sound design</span>
-            </div>
+          <div className={styles.workCardLeft}>
+            <div className={styles.workCardMozilla}>
+              <div className={styles.workCardTop}>
+                <p>Mozilla Firefox</p>
+                <Link href="https://www.figma.com/proto/CnwGdVa1c7dHqIbts98rv3/%5B-P3-%5D-App-Redesign---Stephane?page-id=3006%3A2&node-id=5047-2204&viewport=-4396%2C4434%2C1&t=6bao2fFv4bNyf5yv-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=5047%3A2204">
+                  <span className={styles.wordCardLink}>
+                    Figma prototype here
+                  </span>
+                </Link>
+                <span className={styles.design}>
+                  UI/UX design (Open-source app redesign){" "}
+                </span>
+              </div>
 
-            <div className={styles.wordCardImage}>
-              {" "}
-              <iframe
-                style={{ borderRadius: "12px" }}
-                src="https://open.spotify.com/embed/playlist/4kGr7J12cqqm8f8oqHEprS?utm_source=generator&theme=0"
-                width="100%"
-                height="360"
-                allowFullScreen
-                allow="autoplay; clipboard-write; encrypted-media; allowFullScreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
+              <div className={styles.wordCardImage}>
+                <Image
+                  src="/mozilla.png"
+                  alt="Description de l'image"
+                  width={600}
+                  height={360}
+                  className={styles.wordCardImageMozilla}
+                ></Image>
+              </div>
+              <Link href="/selectedwork/mozillaframe1">
+                <div className={styles.wordCardImage}>
+                  <Image
+                    src="/frame1.png"
+                    alt="Description de l'image"
+                    width={600}
+                    height={360}
+                    className={styles.wordCardImageMozilla}
+                  ></Image>
+                </div>
+              </Link>
+              <Link href="/selectedwork/mozillaframe1">
+                <div className={styles.wordCardImage}>
+                  <Image
+                    src="/frame2.png"
+                    alt="Description de l'image"
+                    width={600}
+                    height={360}
+                    className={styles.wordCardImageMozilla}
+                  ></Image>
+                </div>
+              </Link>
             </div>
           </div>
-          <div className={styles.workCard}>
-            <div className={styles.workCardTop}>
-              <p>Northlamb records</p>
-              <Link href="http://northlamb.club">
-                <span className={styles.wordCardLink}>northlamb.club</span>
-              </Link>
-              <span className={styles.design}>Web design</span>
-            </div>
+          <div>
+            <div className={styles.workCard}>
+              <div className={styles.workCardTop}>
+                <p>We are BMF</p>
+                <span className={styles.wordCardLocation}>Cannes Lions</span>
+                <span className={styles.design}>Sound design</span>
+              </div>
 
-            <div className={styles.wordCardImage}>
-              <Image
-                src="/northlamb.png"
-                alt="Description de l'image"
-                width={600}
-                height={360}
-                className={styles.wordCardImage}
-              ></Image>
+              <div className={styles.wordCardImage}>
+                {" "}
+                <iframe
+                  style={{ borderRadius: "12px" }}
+                  src="https://open.spotify.com/embed/playlist/4kGr7J12cqqm8f8oqHEprS?utm_source=generator&theme=0"
+                  width="100%"
+                  height="360"
+                  allowFullScreen
+                  allow="autoplay; clipboard-write; encrypted-media; allowFullScreen; picture-in-picture"
+                  loading="lazy"
+                ></iframe>
+              </div>
             </div>
-          </div>
-          <div className={styles.workCard}>
-            <div className={styles.workCardTop}>
-              <p>Epoche </p>
-              <Link href="http://epocheberlin.de">
-                <span className={styles.wordCardLink}>www.epocheberlin.de</span>
-              </Link>
-              <span className={styles.design}>Web design</span>
+            <div className={styles.workCard}>
+              <div className={styles.workCardTop}>
+                <p>Northlamb records</p>
+                <Link href="http://northlamb.club">
+                  <span className={styles.wordCardLink}>northlamb.club</span>
+                </Link>
+                <span className={styles.design}>Web design</span>
+              </div>
+
+              <div className={styles.wordCardImage}>
+                <Image
+                  src="/northlamb.png"
+                  alt="Description de l'image"
+                  width={600}
+                  height={360}
+                  className={styles.wordCardImage}
+                ></Image>
+              </div>
             </div>
+            <div className={styles.workCard}>
+              <div className={styles.workCardTop}>
+                <p>Epoche </p>
+                <Link href="http://epocheberlin.de">
+                  <span className={styles.wordCardLink}>
+                    www.epocheberlin.de
+                  </span>
+                </Link>
+                <span className={styles.design}>Web design</span>
+              </div>
 
-            <div className={styles.wordCardImage}>
-              <Image
-                src="/epoche.png"
-                alt="Description de l'image"
-                width={600}
-                height={360}
-                className={styles.wordCardImage}
-              ></Image>
-            </div>
-          </div>{" "}
-          <div className={styles.workCard}>
-            <div className={styles.workCardTop}>
-              <p>Variety & Golden Globes</p>
+              <div className={styles.wordCardImage}>
+                <Image
+                  src="/epoche.png"
+                  alt="Description de l'image"
+                  width={600}
+                  height={360}
+                  className={styles.wordCardImage}
+                ></Image>
+              </div>
+            </div>{" "}
+            <div className={styles.workCard}>
+              <div className={styles.workCardTop}>
+                <p>Variety & Golden Globes</p>
 
-              <span className={styles.wordCardLocation}>
-                Cannes Film Festival
-              </span>
+                <span className={styles.wordCardLocation}>
+                  Cannes Film Festival
+                </span>
 
-              <span className={styles.design}>Sound design</span>
-            </div>
+                <span className={styles.design}>Sound design</span>
+              </div>
 
-            <div className={styles.wordCardImage}>
-              <Image
-                src="/variety.png"
-                alt="Myself performing for Variety"
-                width={600}
-                height={360}
-                className={styles.wordCardImage}
-              ></Image>
+              <div className={styles.wordCardImage}>
+                <Image
+                  src="/variety.png"
+                  alt="Myself performing for Variety"
+                  width={600}
+                  height={360}
+                  className={styles.wordCardImage}
+                ></Image>
+              </div>
             </div>
           </div>
         </section>

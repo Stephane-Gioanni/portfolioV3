@@ -28,10 +28,6 @@
   align-items: center;
 }
 
-.headerRight p:hover {
-  cursor: pointer;
-}
-
 .pageTitle {
   font-size: 20px;
 }
@@ -39,4 +35,10 @@
 .letsconnect {
   font-size: 50px;
   margin-left: 10px;
+}
+
+.letsconnect:hover {
+  font-size: 50px;
+  margin-left: 10px;
+  color: #d0cec6;
 }
