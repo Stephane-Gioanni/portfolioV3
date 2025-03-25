@@ -74,7 +74,7 @@ export default function Contact() {
           </div>
           <div className={styles.bandeSelectedWork}>
             <Link href="/selectedwork">
-              {" "}
+            
               <p> SelectedWork</p>
             </Link>
           </div>
