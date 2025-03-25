@@ -9,7 +9,7 @@ export default function Mozillaframe1() {
 
       <Image
         src="/frame1.png"
-        alt="Description de l'image"
+        alt="Heuristic analysis"
         fill
         className={styles.image}
       ></Image>

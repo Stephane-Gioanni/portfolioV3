@@ -50,7 +50,7 @@ export default function Selectedwork() {
                   ></Image>
                 </div>
               </Link>
-              <Link href="/selectedwork/mozillaframe1">
+              <Link href="/selectedwork/mozillaframe2">
                 <div className={styles.wordCardImage}>
                   <Image
                     src="/frame2.png"

@@ -9,7 +9,7 @@ export default function Mozillaframe2() {
 
       <Image
         src="/frame2.png"
-        alt="Description de l'image"
+        alt="Prototype Design"
         fill
         className={styles.image}
       ></Image>
