@@ -42,8 +42,8 @@ export default function Selectedwork() {
               <Link href="/selectedwork/mozillaframe1">
                 <div className={styles.wordCardImage}>
                   <Image
-                    src="/frame1.png"
-                    alt="Description de l'image"
+                    src="/frame111.jpg"
+                    alt="Heuristic analysis"
                     width={600}
                     height={360}
                     className={styles.wordCardImageMozilla}
@@ -53,8 +53,8 @@ export default function Selectedwork() {
               <Link href="/selectedwork/mozillaframe2">
                 <div className={styles.wordCardImage}>
                   <Image
-                    src="/frame2.png"
-                    alt="Description de l'image"
+                    src="/frame112.jpg"
+                    alt="Prototype design"
                     width={600}
                     height={360}
                     className={styles.wordCardImageMozilla}
