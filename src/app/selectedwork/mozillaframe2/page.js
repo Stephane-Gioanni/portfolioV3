@@ -8,7 +8,7 @@ export default function Mozillaframe2() {
       <span>Fermer</span>
 
       <Image
-        src="/frame2.png"
+        src="/frame112.jpg"
         alt="Prototype Design"
         fill
         className={styles.image}

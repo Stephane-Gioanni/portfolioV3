@@ -8,7 +8,7 @@ export default function Mozillaframe1() {
       <span>Fermer</span>
 
       <Image
-        src="/frame1.png"
+        src="/frame111.jpg"
         alt="Heuristic analysis"
         fill
         className={styles.image}
