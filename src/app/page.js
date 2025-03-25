@@ -64,7 +64,7 @@ export default function Home() {
         <div className={styles.contacts}>
           <li>Mail</li>
           <li>Phone</li>
-          <li>Linkedin</li>
+
           <li>GitHub</li>
         </div>
       </section>
