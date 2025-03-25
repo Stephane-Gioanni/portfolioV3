@@ -4,8 +4,10 @@ import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 import styles from "./contact.module.css";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Contact() {
+  const [tel, setTel] = useState(false);
   return (
     <div className={styles.page}>
       <Header></Header>
@@ -15,13 +17,55 @@ export default function Contact() {
           <p>Find me. Reach me.</p>
         </div>
         <section className={styles.section}>
-          <p>mail</p>
-          <p>tel</p>
-          <p>linkedin</p>
-          <p>github</p>
+          <li className={styles.liSection}>
+            <a href="mailto:stephane.gioanni@gmail.com?">mail</a>
+          </li>
+          {tel ? (
+            <li
+              onClick={() => {
+                setTel(false);
+              }}
+              className={styles.tel}
+            >
+              +33660545039
+            </li>
+          ) : (
+            <li
+              className={styles.liSection}
+              onClick={() => {
+                setTel(true);
+              }}
+            >
+              tel
+            </li>
+          )}
+
+          <Link href="https://www.linkedin.com/in/stephane--g/">
+            <li className={styles.liSection}>linkedin</li>
+          </Link>
+
+          <Link href="https://github.com/Stephane-Gioanni">
+            <li className={styles.liSection}>github</li>
+          </Link>
         </section>
 
         <div className={styles.footer}>
+          <nav>
+            <Link href="/aboutme">
+              <li> About me</li>
+            </Link>
+            <Link href="/selectedwork">
+              <li> SelectedWork</li>
+            </Link>
+          </nav>
+        </div>
+      </main>
+    </div>
+  );
+}
+
+/*
+<div className={styles.footer}>
           <div id="bande" className={styles.bandeAboutme}>
             <Link href="/aboutme">
               {" "}
@@ -35,7 +79,4 @@ export default function Contact() {
             </Link>
           </div>
         </div>
-      </main>
-    </div>
-  );
-}
+*/

@@ -149,6 +149,21 @@ export default function Selectedwork() {
         </section>
       </main>
       <div className={styles.footer}>
+        <nav>
+          <Link href="/aboutme">
+            <li> AboutMe</li>
+          </Link>
+          <Link href="/iveworkedwith">
+            <li>IveWorkedWith</li>
+          </Link>
+        </nav>
+      </div>
+    </div>
+  );
+}
+
+/*
+<div className={styles.footer}>
         <Link href="/aboutme">
           <div className={styles.bandeAboutme}>
             <p> AboutMe</p>
@@ -160,6 +175,4 @@ export default function Selectedwork() {
           </div>
         </Link>
       </div>
-    </div>
-  );
-}
+      */

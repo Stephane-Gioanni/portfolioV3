@@ -86,6 +86,22 @@ export default function Iveworkedwith() {
         </section>
       </main>
       <div className={styles.footer}>
+        <nav>
+          <Link href="/aboutme">
+            <li> AboutMe</li>
+          </Link>
+          <Link href="/selectedwork">
+            <li> SelectedWork</li>
+          </Link>
+        </nav>
+      </div>
+    </div>
+  );
+}
+
+/*
+
+ <div className={styles.footer}>
         <div id="bande" className={styles.bandeAboutme}>
           <Link href="/aboutme" className={styles.bandeAboutme}>
             <div className={styles.bandeAboutme}>
@@ -98,7 +114,4 @@ export default function Iveworkedwith() {
             <p> SelectedWork</p>
           </div>
         </Link>
-      </div>
-    </div>
-  );
-}
+      </div>*/

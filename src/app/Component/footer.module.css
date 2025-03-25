@@ -19,3 +19,9 @@
   font-size: 50px;
   margin: 0 20px;
 }
+
+li:hover {
+  font-size: 50px;
+  margin-left: 10px;
+  color: #d0cec6;
+}

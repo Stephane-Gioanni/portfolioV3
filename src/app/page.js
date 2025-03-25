@@ -22,23 +22,6 @@ export default function Home() {
             And your mind
           </p>
         </div>
-        <Link href="/aboutme" className={styles.bandeAboutme}>
-          <div id="bande" className={styles.bandeAboutme}>
-            {" "}
-            <p> About me</p>
-          </div>
-        </Link>
-        <Link href="/selectedwork" className={styles.bandeSelectedWork}>
-          <div>
-            {" "}
-            <p className={styles.text}> SelectedWork</p>
-          </div>
-        </Link>
-        <Link href="/iveworkedwith" className={styles.bandeContact}>
-          <div id="bande" className={styles.bandeContact}>
-            <p>IveWorkedWith</p>
-          </div>
-        </Link>
 
         <Footer></Footer>
       </main>
@@ -70,7 +53,11 @@ export default function Home() {
         </p>
       </section>
       <section className={styles.section}>
-        <span>SelectedWork</span>
+        <Link href="/selectedwork">
+          <div>
+            <span> SelectedWork</span>
+          </div>
+        </Link>
       </section>
       <section className={styles.section}>
         <span>Contact&Socials</span>
@@ -101,3 +88,24 @@ export default function Home() {
         <p> Here to create, design & develop.</p>
       </div>
 */
+
+/*
+   <Link href="/aboutme" className={styles.bandeAboutme}>
+          <div id="bande" className={styles.bandeAboutme}>
+            {" "}
+            <p> About me</p>
+          </div>
+        </Link>
+        <Link href="/selectedwork" className={styles.bandeSelectedWork}>
+          <div>
+            {" "}
+            <p className={styles.text}> SelectedWork</p>
+          </div>
+        </Link>
+        <Link href="/iveworkedwith" className={styles.bandeContact}>
+          <div id="bande" className={styles.bandeContact}>
+            <p>IveWorkedWith</p>
+          </div>
+        </Link>
+
+        */

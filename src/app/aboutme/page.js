@@ -45,6 +45,21 @@ export default function AboutMe() {
         </section>
       </main>
       <div className={styles.footer}>
+        <nav>
+          <Link href="/selectedwork">
+            <li> SelectedWork</li>
+          </Link>
+          <Link href="/iveworkedwith">
+            <li>IveWorkedWith</li>
+          </Link>
+        </nav>
+      </div>
+    </div>
+  );
+}
+
+/*
+<div className={styles.footer}>
         <div id="bande" className={styles.bandeAboutmeFooter}>
           <Link href="/selectedwork" className={styles.bandeSelectedWork}>
             <div>
@@ -58,6 +73,4 @@ export default function AboutMe() {
           </div>{" "}
         </Link>
       </div>
-    </div>
-  );
-}
+*/
