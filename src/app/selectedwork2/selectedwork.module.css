@@ -20,7 +20,7 @@
 .centerPage {
   width: 4px;
   height: 4500px;
-  background-color: white;
+  background-color: #eaeff2;
 }
 
 .workCards {
@@ -56,7 +56,7 @@
 
 .yearStopLeft {
   width: 50px;
-  background-color: white;
+  background-color: #eaeff2;
   height: 10px;
   margin-left: 15px;
 }
@@ -69,7 +69,7 @@
 }
 .yearStop {
   width: 50px;
-  background-color: white;
+  background-color: #eaeff2;
   height: 10px;
   margin-right: 15px;
 }
