@@ -20,7 +20,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.hero}>
           <p className={styles.heroIntro}>
-            I'm Stephane. <br></br>I design for your ears.<br></br>
+            I make experience for your ears.<br></br>
             Your eyes.<br></br>
             And your mind.
           </p>
