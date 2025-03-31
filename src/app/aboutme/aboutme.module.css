@@ -1,7 +1,7 @@
 .page {
   font-family: "Inter Tight", sans-serif;
-  background-color: black;
-  color: white;
+  background-color: #121212;
+  color: #eaeff2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -63,7 +63,7 @@
 
 .footer nav li:hover {
   font-size: 50px;
-  margin-left: 10px;
+
   color: #d0cec6;
 }
 

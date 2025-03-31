@@ -1,7 +1,8 @@
 .page {
   font-family: "Inter Tight", sans-serif;
-  background-color: black;
-  color: #e9e9e9;
+
+  background-color: #121212;
+  color: #eaeff2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -38,7 +39,7 @@
 }
 
 .section:hover {
-  background-color: #e9e9e9;
+  background-color: #eaeff2;
   color: black;
 }
 .section span {
@@ -116,14 +117,14 @@
   white-space: nowrap; /* Empêche le texte de passer à la ligne */
 }
 .bandeAboutme:hover {
-  background-color: white;
+  background-color: #eaeff2;
   color: black;
 }
 
 .bandeAboutme p {
   animation: slideText 20s linear infinite; /* Défilement fluide */
   display: inline-block; /* Permet d'éviter les comportements inattendus */
-  border: 1px solid white;
+  border: 1px solid #eaeff2;
   padding: 10px 60px;
   border-radius: 50px;
 }
@@ -136,7 +137,7 @@
 }
 
 .bandeSelectedWork:hover {
-  background-color: white;
+  background-color: #eaeff2;
   color: black;
 }
 
@@ -147,7 +148,7 @@
   animation: slideEffect 20s linear infinite; /* Animation infinie */
   right: -10%; /* Commence en dehors de l'écran à droite */
   font-size: 30px;
-  border: 1px solid white;
+  border: 1px solid #eaeff2;
   padding: 10px 60px;
   border-radius: 50px;
 }
@@ -176,14 +177,14 @@
 }
 
 .bandeContact:hover {
-  background-color: white;
+  background-color: #eaeff2;
   color: black;
 }
 
 .bandeContact p {
   animation: slideText 25s linear infinite; /* Défilement fluide */
   display: inline-block; /* Permet d'éviter les comportements inattendus */
-  border: 1px solid white;
+  border: 1px solid #eaeff2;
   padding: 10px 60px;
   border-radius: 50px;
 }
@@ -191,3 +192,8 @@
 /*
 SELECTED WORK CSS
 */
+
+.tel:hover {
+  cursor: pointer;
+  color: #3f3f38;
+}

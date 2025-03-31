@@ -17,16 +17,24 @@
   padding: 80px 0;
 }
 
+.centerPage {
+  width: 4px;
+  height: 4500px;
+  background-color: white;
+}
+
 .workCards {
   width: 100%;
   margin: 20px 0;
+  margin-top: 100px;
   font-size: 40px;
   line-height: 50px;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
+/* WORD CARD LEFT  */
 .wordCardImageMozilla {
   border: 1px solid #eaeff2;
   border-radius: 10px;
@@ -35,20 +43,49 @@
 }
 
 .workCardMozilla {
-  width: 600px;
+  height: 670px;
+  width: 800px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  margin: 100px;
+}
+
+.yearLeft {
+  display: flex;
+  align-items: center;
+}
+
+.yearStopLeft {
+  width: 50px;
+  background-color: white;
+  height: 10px;
+  margin-left: 15px;
+}
+
+/* WORK CARD RIGHT */
+
+.year {
+  display: flex;
+  align-items: center;
+}
+.yearStop {
+  width: 50px;
+  background-color: white;
+  height: 10px;
+  margin-right: 15px;
 }
 
 .workCard {
-  height: 470px;
-  width: 600px;
+  height: 670px;
+  width: 800px;
+  display: flex;
+
+  justify-content: space-between;
+  margin: 100px 0;
+}
+
+.workCardContent {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 100px 100px 140px 100px;
 }
 
 .workCardTop {
@@ -71,9 +108,18 @@
   font-size: 20px;
 }
 
+.downWorkCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
 .wordCardImage {
   border: 1px solid #eaeff2;
   height: 360px;
+  width: 600px;
   border-radius: 12px;
   margin-bottom: 50px;
 }
@@ -126,21 +172,6 @@
   }
 }
 
-.bande {
-  width: 100%;
-  height: 70px;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  overflow: hidden; /* Empêche le texte de dépasser visuellement */
-  white-space: nowrap; /* Empêche le texte de passer à la ligne */
-}
-
-.bande p {
-  animation: slideText 15s linear infinite; /* Défilement fluide */
-  display: inline-block; /* Permet d'éviter les comportements inattendus */
-}
-
 .bandeSelectedWork {
   width: 100%;
   height: 70px;
@@ -157,32 +188,6 @@
   font-size: 60px;
 }
 
-.bandeAboutme {
-  position: relative;
-  width: 100%;
-  height: 70px; /* Ajuste la hauteur en fonction de tes besoins */
-
-  overflow: hidden; /* Empêche le texte de déborder */
-  padding-top: 10px;
-}
-
-.bandeAboutme p {
-  position: absolute;
-  white-space: nowrap; /* Empêche le texte de se couper */
-  font-size: 30px; /* Ajuste la taille du texte selon tes besoins */
-  animation: slideEffect 20s linear infinite; /* Animation infinie */
-  right: -10%; /* Commence en dehors de l'écran à droite */
-  border: 1px solid #eaeff2;
-  padding: 10px 60px;
-  border-radius: 50px;
-}
-
-.bandeAboutme:hover {
-  background-color: #eaeff2;
-  color: #121212;
-  padding-top: 6px;
-}
-
 @keyframes slideEffect {
   0% {
     right: -10%; /* Le texte commence à droite, hors de l'écran */
@@ -194,27 +199,4 @@
   100% {
     right: 100%; /* Le texte sort complètement à gauche */
   }
-}
-
-.bandeContact {
-  width: 100%;
-  height: 70px;
-  font-size: 30px; /* Ajuste la taille du texte selon tes besoins */
-  display: flex;
-  align-items: center;
-  overflow: hidden; /* Empêche le texte de dépasser visuellement */
-  white-space: nowrap; /* Empêche le texte de passer à la ligne */
-}
-
-.bandeContact p {
-  animation: slideText 25s linear infinite; /* Défilement fluide */
-  display: inline-block; /* Permet d'éviter les comportements inattendus */
-  border: 1px solid #eaeff2;
-  padding: 10px 60px;
-  border-radius: 50px;
-}
-
-.bandeContact:hover {
-  background-color: #eaeff2;
-  color: #121212;
 }

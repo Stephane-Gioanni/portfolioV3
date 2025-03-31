@@ -1,7 +1,7 @@
 .page {
   font-family: "Inter Tight", sans-serif;
-  background-color: black;
-  color: white;
+  background-color: #121212;
+  color: #eaeff2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@
   display: flex;
   justify-content: space-around;
   font-size: 30px;
-  width: 100%;
+  width: 90%;
   flex-wrap: wrap;
   list-style: none;
 }
@@ -126,13 +126,13 @@
   font-size: 30px; /* Ajuste la taille du texte selon tes besoins */
   animation: slideEffect 20s linear infinite; /* Animation infinie */
   right: -10%; /* Commence en dehors de l'écran à droite */
-  border: 1px solid white;
+  border: 1px solid #fdfdfd;
   padding: 10px 60px;
   border-radius: 50px;
 }
 
 .bandeAboutme:hover {
-  background-color: white;
+  background-color: #fdfdfd;
   color: black;
   padding-top: 3px;
 }

@@ -71,7 +71,7 @@ export default function Iveworkedwith() {
             Baoli Group <span>(FR)</span>
           </li>
           <li>
-            Northlamb Records <span>(GER)</span>
+            Northlamb Records <span>(FR)</span>
           </li>
           <li>
             DB Group <span>(FR)</span>

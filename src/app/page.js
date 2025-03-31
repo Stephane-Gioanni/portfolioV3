@@ -6,9 +6,12 @@ import styles from "./page.module.css";
 import Header from "./Component/Header";
 import Footer from "./Component/Footer";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
   // Création des références pour chaque section
+
+  const [tel, setTel] = useState(false);
 
   return (
     <div className={styles.page}>
@@ -19,7 +22,7 @@ export default function Home() {
           <p className={styles.heroIntro}>
             I'm Stephane. <br></br>I design for your ears.<br></br>
             Your eyes.<br></br>
-            And your mind
+            And your mind.
           </p>
         </div>
 
@@ -62,10 +65,36 @@ export default function Home() {
       <section className={styles.section}>
         <span>Contact&Socials</span>
         <div className={styles.contacts}>
-          <li>Mail</li>
-          <li>Phone</li>
+          <li className={styles.liSection}>
+            <a href="mailto:stephane.gioanni@gmail.com?">mail</a>
+          </li>
+          {tel ? (
+            <li
+              onClick={() => {
+                setTel(false);
+              }}
+              className={styles.tel}
+            >
+              +33660545039
+            </li>
+          ) : (
+            <li
+              className={styles.tel}
+              onClick={() => {
+                setTel(true);
+              }}
+            >
+              tel
+            </li>
+          )}
 
-          <li>GitHub</li>
+          <Link href="https://www.linkedin.com/in/stephane--g/">
+            <li className={styles.liSection}>linkedin</li>
+          </Link>
+
+          <Link href="https://github.com/Stephane-Gioanni">
+            <li className={styles.liSection}>github</li>
+          </Link>
         </div>
       </section>
     </div>

@@ -26,7 +26,7 @@ export default function Selectedwork() {
                   </span>
                 </Link>
                 <span className={styles.design}>
-                  UI/UX design (Open-source app redesign){" "}
+                  UI/UX design (Open-source app redesign) - 2025
                 </span>
               </div>
 
@@ -68,7 +68,7 @@ export default function Selectedwork() {
               <div className={styles.workCardTop}>
                 <p>We are BMF</p>
                 <span className={styles.wordCardLocation}>Cannes Lions</span>
-                <span className={styles.design}>Sound design</span>
+                <span className={styles.design}>Sound design - 2023</span>
               </div>
 
               <div className={styles.wordCardImage}>
@@ -90,7 +90,7 @@ export default function Selectedwork() {
                 <Link href="http://northlamb.club">
                   <span className={styles.wordCardLink}>northlamb.club</span>
                 </Link>
-                <span className={styles.design}>Web design</span>
+                <span className={styles.design}>Web design - 2024</span>
               </div>
 
               <div className={styles.wordCardImage}>
@@ -111,7 +111,7 @@ export default function Selectedwork() {
                     www.epocheberlin.de
                   </span>
                 </Link>
-                <span className={styles.design}>Web design</span>
+                <span className={styles.design}>Web design - 2024</span>
               </div>
 
               <div className={styles.wordCardImage}>
@@ -132,7 +132,9 @@ export default function Selectedwork() {
                   Cannes Film Festival
                 </span>
 
-                <span className={styles.design}>Sound design</span>
+                <span className={styles.design}>
+                  Sound design - 2022 / 2023 / 2024
+                </span>
               </div>
 
               <div className={styles.wordCardImage}>

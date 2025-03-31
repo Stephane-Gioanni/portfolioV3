@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid black;
   width: 100%;
   padding: 0 100px;
   list-style: none;
@@ -40,5 +39,6 @@
 .letsconnect:hover {
   font-size: 50px;
   margin-left: 10px;
-  color: #d0cec6;
+  color: white;
+  text-shadow: 2px 2px 10px white;
 }

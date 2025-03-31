@@ -9,6 +9,9 @@ export default function Footer({ setAboutMe }) {
           <li>AboutMe</li>
         </Link>
         <Link href="/iveworkedwith">
+          <li>IveWorkedWith</li>
+        </Link>
+        <Link href="/selectedwork">
           <li>SelectedWork</li>
         </Link>
       </nav>

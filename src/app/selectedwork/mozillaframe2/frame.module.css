@@ -16,4 +16,14 @@
   top: 50px;
   right: 50px;
   font-family: "Inter Tight", sans-serif;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.fermer:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
