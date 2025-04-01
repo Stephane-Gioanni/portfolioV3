@@ -88,6 +88,7 @@ export default function Selectedwork4() {
         <div id="bande" className={styles.bandeSelectedWork}>
           <p>SelectedWork</p>
         </div>
+
         <div className={styles.timelineContainer}>
           <div className={styles.timelineLine}></div>
           <div className={styles.timelineItems}>
@@ -216,6 +217,7 @@ export default function Selectedwork4() {
           </div>
         </div>
       </main>
+
       <div className={styles.footer}>
         <nav>
           <Link href="/aboutme">

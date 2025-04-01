@@ -341,7 +341,11 @@ const SnakeGame = () => {
           />
           <div className={styles.startPrompt}>
             I guess you're not here for this but you can press any arrow to play
-            snake and at least you'll have fun.{" "}
+            <Link href="/selectedwork">
+              {" "}
+              Or you can click here and check my previous work{" "}
+            </Link>{" "}
+            :)
           </div>
         </div>
       ) : (
