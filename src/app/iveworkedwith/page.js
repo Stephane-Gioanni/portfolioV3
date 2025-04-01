@@ -15,86 +15,91 @@ export default function Iveworkedwith() {
         <div id="bande" className={styles.bandeSelectedWork}>
           <p>IveWorkedWith</p>
         </div>
-        <section className={styles.workWithList}>
-          <li>
-            Golden Globes <span>(US)</span>
-          </li>
-          <li>
-            Variety <span>(US)</span>{" "}
-          </li>
-          <li>
-            Mama Shelter <span>(UK)</span>
-          </li>
 
-          <li>
-            Hotel Costes <span>(FR)</span>
-          </li>
-          <li>
-            Innovision events
-            <span>(UK)</span>
-          </li>
-          <li>
-            Experimental group <span>(FR)</span>
-          </li>
-          <li>
-            We are BMF <span>(UK)</span>{" "}
-          </li>
-          <li>
-            Maison Serieuse <span>(FR)</span>
-          </li>
-          <li>
-            YoungDogs <span>(NL)</span>
-          </li>
+        <section className={styles.mainContent}>
+          <div className={styles.workWithList}>
+            <li>
+              Golden Globes <span>(US)</span>
+            </li>
+            <li>
+              Variety <span>(US)</span>{" "}
+            </li>
+            <li>
+              Mama Shelter <span>(UK)</span>
+            </li>
 
-          <li>
-            Groupe Barrière <span>(FR)</span>
-          </li>
-          <li>
-            Stockfish <span> (FR)</span>
-          </li>
-          <li>
-            Epoche <span>(GER)</span>
-          </li>
-          <li>
-            Groupe Beaumarly <span>(FR)</span>
-          </li>
-          <li>
-            Le Perchoir Group <span>(FR)</span>
-          </li>
-          <li>
-            Chez Elles <span>(UK)</span>
-          </li>
-          <li>
-            Rhrude <span>(ES)</span>
-          </li>
-          <li>
-            Baoli Group <span>(FR)</span>
-          </li>
-          <li>
-            Northlamb Records <span>(FR)</span>
-          </li>
-          <li>
-            DB Group <span>(FR)</span>
-          </li>
-          <li>
-            Pierre Augustin Rose <span>(FR)</span>
-          </li>
-          <li>
-            Must Group <span>(FR)</span>
-          </li>
-          <li>and more..</li>
+            <li>
+              Hotel Costes <span>(FR)</span>
+            </li>
+            <li>
+              Innovision events
+              <span>(UK)</span>
+            </li>
+            <li>
+              Experimental group <span>(FR)</span>
+            </li>
+            <li>
+              We are BMF <span>(UK)</span>{" "}
+            </li>
+            <li>
+              Maison Serieuse <span>(FR)</span>
+            </li>
+            <li>
+              YoungDogs <span>(NL)</span>
+            </li>
+
+            <li>
+              Groupe Barrière <span>(FR)</span>
+            </li>
+            <li>
+              Stockfish <span> (FR)</span>
+            </li>
+            <li>
+              Epoche <span>(GER)</span>
+            </li>
+            <li>
+              Groupe Beaumarly <span>(FR)</span>
+            </li>
+            <li>
+              Le Perchoir Group <span>(FR)</span>
+            </li>
+            <li>
+              Chez Elles <span>(UK)</span>
+            </li>
+            <li>
+              Rhrude <span>(ES)</span>
+            </li>
+            <li>
+              Baoli Group <span>(FR)</span>
+            </li>
+            <li>
+              Northlamb Records <span>(FR)</span>
+            </li>
+            <li>
+              DB Group <span>(FR)</span>
+            </li>
+            <li>
+              Pierre Augustin Rose <span>(FR)</span>
+            </li>
+            <li>
+              Must Group <span>(FR)</span>
+            </li>
+            <li>and more..</li>
+          </div>
+          <div className={styles.mainRight}>
+            <div className={styles.footer}>
+              <nav>
+                <Link href="/aboutme">
+                  <li> AboutMe</li>
+                </Link>
+                <Link href="/selectedwork">
+                  <li> SelectedWork</li>
+                </Link>
+              </nav>
+            </div>
+          </div>
         </section>
       </main>
-      <div className={styles.footer}>
-        <nav>
-          <Link href="/aboutme">
-            <li> AboutMe</li>
-          </Link>
-          <Link href="/selectedwork">
-            <li> SelectedWork</li>
-          </Link>
-        </nav>
-      </div>
     </div>
   );
 }

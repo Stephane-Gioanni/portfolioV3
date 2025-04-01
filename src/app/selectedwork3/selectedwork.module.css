@@ -15,269 +15,75 @@
   flex-direction: column;
   flex: 1;
   padding: 80px 0;
-  width: 100%;
 }
 
-@keyframes slideText {
-  0% {
-    transform: translateX(-70%);
-  }
-  100% {
-    transform: translateX(calc(100vw + 10%));
-  }
-}
-
-.bandeSelectedWork {
+.workCards {
   width: 100%;
-  height: 70px;
-  font-size: 30px;
+  margin: 20px 0;
+  font-size: 40px;
+  line-height: 50px;
   display: flex;
-  align-items: center;
-  overflow: hidden;
-  white-space: nowrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.bandeSelectedWork p {
-  animation: slideText 20s linear infinite;
-  display: inline-block;
-  font-size: 60px;
+.wordCardImageMozilla {
+  border: 1px solid #eaeff2;
+  border-radius: 10px;
+  width: 600px;
+  margin-bottom: 20px;
 }
 
-/* TIMELINE STYLES */
-.timelineContainer {
-  position: relative;
-  width: 100%;
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 2rem 0;
-  min-height: 600px;
-}
-
-.timelineLine {
-  position: absolute;
-  left: 50%;
-  width: 8px;
-  background-color: #3b82f6;
-  height: 100%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.timelineItems {
-  position: relative;
+.workCardMozilla {
+  width: 600px;
   display: flex;
   flex-direction: column;
-  gap: 8rem;
-  padding: 1rem 0;
+  justify-content: space-between;
+  margin: 100px;
 }
 
-.timelineItemLeft {
-  display: flex;
-  position: relative;
-  width: 100%;
-  justify-content: flex-start;
-}
-
-.timelineItemRight {
-  display: flex;
-  position: relative;
-  width: 100%;
-  justify-content: flex-end;
-}
-
-.timelineContentLeft {
-  position: relative;
-  width: 85%;
-  max-width: 700px;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  background-color: #1f1f1f;
-  border: 1px solid #333;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  color: #eaeff2;
-  margin-right: 60px;
-}
-
-.timelineContentRight {
-  position: relative;
-  width: 85%;
-  max-width: 700px;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  background-color: #1f1f1f;
-  border: 1px solid #333;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  color: #eaeff2;
-  margin-left: 60px;
-}
-
-.timelineDotLeft {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #eaeff2;
-  border: 3px solid #3b82f6;
-  border-radius: 50%;
-  z-index: 2;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -44px;
-}
-
-.timelineDotRight {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #eaeff2;
-  border: 3px solid #3b82f6;
-  border-radius: 50%;
-  z-index: 2;
-  top: 50%;
-  transform: translateY(-50%);
-  left: -44px;
-}
-
-.timelineYearLeft {
-  position: absolute;
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #3b82f6;
-  text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3;
-  right: -85px;
-  background-color: #121212;
-  padding: 0.3rem 0.5rem;
-  border-radius: 4px;
-  white-space: nowrap;
-}
-
-.timelineYearRight {
-  position: absolute;
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #3b82f6;
-  text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3;
-  left: -85px;
-  background-color: #121212;
-  padding: 0.3rem 0.5rem;
-  border-radius: 4px;
-  white-space: nowrap;
-}
-
-/* CSS pour gérer les années sur plusieurs lignes */
-.yearMultiLine {
+.workCard {
+  height: 470px;
+  width: 600px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  line-height: 1.2;
-  text-align: center;
+  justify-content: space-between;
+  margin: 100px 100px 140px 100px;
 }
 
-.timelineTitle {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #eaeff2;
+.workCardTop {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 10px;
 }
 
-.timelineDescription {
-  color: #adb5bd;
-  margin-bottom: 1.2rem;
-  font-size: 1.1rem;
-  line-height: 1.5;
+.wordCardLink {
+  font-size: 24px;
+  text-decoration: underline;
 }
 
-/* Styles pour les outils et technologies */
-.timelineTools {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
-  border-left: 3px solid #3b82f6;
+.wordCardLocation {
+  font-size: 24px;
 }
 
-.timelineToolsTitle {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #60a5fa;
-  margin-bottom: 0.5rem;
+.design {
+  font-size: 20px;
 }
 
-.timelineToolsList {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #94a3b8;
-  margin: 0;
+.wordCardImage {
+  border: 1px solid #eaeff2;
+  height: 360px;
+  border-radius: 12px;
+  margin-bottom: 50px;
 }
 
-/* Styles pour les liens */
-.timelineLink {
-  display: inline-block;
-  color: #3b82f6;
-  text-decoration: none;
-  margin-bottom: 1.2rem;
-  font-weight: 500;
-  font-size: 1.05rem;
-  transition: color 0.3s, transform 0.3s;
-}
-
-.timelineLink:hover {
-  color: #60a5fa;
-  transform: translateY(-2px);
-}
-
-/* Styles pour les conteneurs d'images */
-.timelineImageContainer {
-  width: 100%;
-  margin: 1.5rem 0;
-  border-radius: 0.4rem;
-  overflow: hidden;
-  transition: transform 0.3s;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.timelineImageContainer:hover {
-  transform: translateY(-5px);
-}
-
-/* Styles pour les images */
-.timelineImage {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 0.4rem;
-  object-fit: cover;
-}
-
-.timelineContentLeft::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -10px;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #1f1f1f;
-}
-
-.timelineContentRight::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  top: 50%;
-  transform: translateY(-50%);
-  left: -10px;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #1f1f1f transparent transparent;
+.contacts {
+  width: 800px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
 }
 
 .footer {
@@ -309,180 +115,106 @@
   color: #eaeff2;
 }
 
-/* MEDIA QUERIES FOR RESPONSIVENESS */
-@media (max-width: 1700px) {
-  .timelineLine {
-    left: auto;
-    right: 0;
-    transform: none;
+@keyframes slideText {
+  0% {
+    transform: translateX(-70%); /* Commence complètement à gauche */
   }
-
-  .timelineItemLeft,
-  .timelineItemRight {
-    justify-content: flex-start;
-  }
-
-  .timelineContentLeft,
-  .timelineContentRight {
-    margin-right: 40px;
-    margin-left: 0;
-    width: calc(100% - 50px);
-    max-width: 850px;
-  }
-
-  .timelineDotLeft,
-  .timelineDotRight {
-    right: -30px;
-    left: auto;
-  }
-
-  .timelineYearLeft,
-  .timelineYearRight {
-    right: -65px;
-    left: auto;
-    top: 50%;
-  }
-
-  .timelineYearLeft.yearMultiLine,
-  .timelineYearRight.yearMultiLine {
-    font-size: 1.1rem;
-    line-height: 1.1;
-    padding: 0.3rem;
-  }
-
-  .timelineContentLeft::after,
-  .timelineContentRight::after {
-    right: -10px;
-    left: auto;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #1f1f1f;
+  100% {
+    transform: translateX(
+      calc(100vw + 10%)
+    ); /* Va jusqu'à la fin de l'écran + sa largeur */
   }
 }
 
-@media (max-width: 1200px) {
-  .timelineContainer {
-    max-width: 95%;
-  }
+.bande {
+  width: 100%;
+  height: 70px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Empêche le texte de dépasser visuellement */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
 
-  .timelineContentLeft,
-  .timelineContentRight {
-    max-width: 800px;
+.bande p {
+  animation: slideText 15s linear infinite; /* Défilement fluide */
+  display: inline-block; /* Permet d'éviter les comportements inattendus */
+}
+
+.bandeSelectedWork {
+  width: 100%;
+  height: 70px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Empêche le texte de dépasser visuellement */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+
+.bandeSelectedWork p {
+  animation: slideText 20s linear infinite; /* Défilement fluide */
+  display: inline-block; /* Permet d'éviter les comportements inattendus */
+  font-size: 60px;
+}
+
+.bandeAboutme {
+  position: relative;
+  width: 100%;
+  height: 70px; /* Ajuste la hauteur en fonction de tes besoins */
+
+  overflow: hidden; /* Empêche le texte de déborder */
+  padding-top: 10px;
+}
+
+.bandeAboutme p {
+  position: absolute;
+  white-space: nowrap; /* Empêche le texte de se couper */
+  font-size: 30px; /* Ajuste la taille du texte selon tes besoins */
+  animation: slideEffect 20s linear infinite; /* Animation infinie */
+  right: -10%; /* Commence en dehors de l'écran à droite */
+  border: 1px solid #eaeff2;
+  padding: 10px 60px;
+  border-radius: 50px;
+}
+
+.bandeAboutme:hover {
+  background-color: #eaeff2;
+  color: #121212;
+  padding-top: 6px;
+}
+
+@keyframes slideEffect {
+  0% {
+    right: -10%; /* Le texte commence à droite, hors de l'écran */
+  }
+  50% {
+    right: 50%; /* Le texte atteint le centre de l'écran */
+    transform: translateX(50%); /* Ajuste pour le centrer */
+  }
+  100% {
+    right: 100%; /* Le texte sort complètement à gauche */
   }
 }
 
-@media (max-width: 768px) {
-  .timelineContentLeft,
-  .timelineContentRight {
-    width: calc(100% - 45px);
-    margin-right: 35px;
-    padding: 1.5rem;
-  }
-
-  .timelineTitle {
-    font-size: 1.3rem;
-  }
-
-  .timelineDescription {
-    font-size: 1rem;
-  }
-
-  .timelineYearLeft,
-  .timelineYearRight {
-    right: -60px;
-    font-size: 1.1rem;
-  }
-
-  .timelineYearLeft.yearMultiLine,
-  .timelineYearRight.yearMultiLine {
-    font-size: 1rem;
-    padding: 0.2rem;
-  }
-
-  .timelineTools {
-    padding: 0.8rem;
-  }
-
-  .timelineToolsTitle {
-    font-size: 0.9rem;
-  }
-
-  .timelineToolsList {
-    font-size: 0.85rem;
-  }
-
-  .footer {
-    height: 150px;
-    padding: 0 20px;
-  }
-
-  .footer nav {
-    width: 100%;
-  }
-
-  .footer nav li {
-    font-size: 36px;
-    margin: 0 10px;
-  }
+.bandeContact {
+  width: 100%;
+  height: 70px;
+  font-size: 30px; /* Ajuste la taille du texte selon tes besoins */
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Empêche le texte de dépasser visuellement */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
 }
 
-@media (max-width: 480px) {
-  .timelineContentLeft,
-  .timelineContentRight {
-    width: calc(100% - 40px);
-    margin-right: 30px;
-    padding: 1.2rem;
-  }
+.bandeContact p {
+  animation: slideText 25s linear infinite; /* Défilement fluide */
+  display: inline-block; /* Permet d'éviter les comportements inattendus */
+  border: 1px solid #eaeff2;
+  padding: 10px 60px;
+  border-radius: 50px;
+}
 
-  .timelineTitle {
-    font-size: 1.2rem;
-  }
-
-  .timelineDescription {
-    font-size: 0.95rem;
-  }
-
-  .timelineLink {
-    font-size: 1rem;
-  }
-
-  .timelineDotLeft,
-  .timelineDotRight {
-    width: 16px;
-    height: 16px;
-    right: -24px;
-  }
-
-  .timelineYearLeft,
-  .timelineYearRight {
-    font-size: 1rem;
-    right: -50px;
-    padding: 0.2rem 0.3rem;
-  }
-
-  .timelineYearLeft.yearMultiLine,
-  .timelineYearRight.yearMultiLine {
-    font-size: 0.85rem;
-    padding: 0.2rem;
-  }
-
-  .timelineTools {
-    padding: 0.7rem;
-    margin-bottom: 1rem;
-  }
-
-  .timelineToolsTitle {
-    font-size: 0.85rem;
-  }
-
-  .timelineToolsList {
-    font-size: 0.8rem;
-  }
-
-  .bandeSelectedWork p {
-    font-size: 40px;
-  }
-
-  .footer nav li {
-    font-size: 28px;
-  }
+.bandeContact:hover {
+  background-color: #eaeff2;
+  color: #121212;
 }

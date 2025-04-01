@@ -12,7 +12,7 @@ export default function Selectedwork4() {
       year: 2025,
       title: "Mozilla Firefox",
       description: "UI/UX design (Open-source app redesign)",
-      tools: ["Figma", "Usability testing"],
+      tools: ["Figma", "Adobe XD", "Sketch", "Usability testing"],
       link: "https://www.figma.com/proto/CnwGdVa1c7dHqIbts98rv3/%5B-P3-%5D-App-Redesign---Stephane?page-id=3006%3A2&node-id=5047-2204&viewport=-4396%2C4434%2C1&t=6bao2fFv4bNyf5yv-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=5047%3A2204",
       linkText: "Figma prototype here",
       mainImage: "/mozilla.png",
@@ -30,53 +30,46 @@ export default function Selectedwork4() {
       ],
     },
     {
-      year: 2025,
-      title: "SixSeptembre (FR)",
-      description: "Web Design",
-      tools: [
-        "NodeJS",
-        "Mongoose",
-        "React",
-        "NextJS",
-        "Javascript",
-        "HTML",
-        "CSS",
-      ],
-      link: "https://www.sixseptembre.com/",
-      linkText: "sixseptembre.com",
-      mainImage: "/sixseptembre.png",
-    },
-    {
       year: 2024,
-      title: "Northlamb Records (FR)",
+      title: "Northlamb Records",
       description: "Sound design",
-      tools: ["React", "NextJS", "Javascript", "HTML", "CSS"],
+      tools: ["Ableton Live", "Max/MSP", "ProTools", "Analog synthesizers"],
       link: "http://northlamb.club",
       linkText: "northlamb.club",
       mainImage: "/northlamb.png",
     },
     {
       year: 2024,
-      title: "Epoche Berlin (GER)",
+      title: "Epoche Berlin",
       description: "Web design",
-      tools: ["React", "NextJS", "Javascript", "HTML", "CSS"],
+      tools: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
       link: "http://epocheberlin.de",
       linkText: "www.epocheberlin.de",
       mainImage: "/epoche.png",
     },
     {
       year: 2023,
-      title: "We are BMF (UK)",
+      title: "We are BMF",
       description: "Sound design - Cannes Lions",
-      tools: ["Spotify", "Artistic Direction"],
+      tools: [
+        "Logic Pro",
+        "Waves plugins",
+        "Soundtoys",
+        "MOTU audio interface",
+      ],
       embed:
         "https://open.spotify.com/embed/playlist/4kGr7J12cqqm8f8oqHEprS?utm_source=generator&theme=0",
     },
     {
-      year: "2022-2023-2024",
-      title: "Variety x Golden Globes Awards (US)",
+      year: "2022-2024",
+      title: "Variety & Golden Globes",
       description: "Sound design - Cannes Film Festival",
-      tools: ["Artistic direction"],
+      tools: [
+        "ProTools",
+        "Native Instruments",
+        "Spitfire Audio",
+        "Universal Audio plugins",
+      ],
       mainImage: "/variety.png",
     },
   ];
@@ -149,7 +142,7 @@ export default function Selectedwork4() {
                     {project.tools && project.tools.length > 0 && (
                       <div className={styles.timelineTools}>
                         <p className={styles.timelineToolsTitle}>
-                          Tools, Technologies or Mission details:
+                          Tools & Technologies:
                         </p>
                         <p className={styles.timelineToolsList}>
                           {project.tools.join(" • ")}

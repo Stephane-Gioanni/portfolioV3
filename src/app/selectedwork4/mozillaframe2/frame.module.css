@@ -1,0 +1,29 @@
+.main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: contain;
+  background-color: black; /* Optionnel : pour remplir l’espace vide */
+}
+
+.fermer {
+  position: absolute;
+  color: white;
+  top: 50px;
+  right: 50px;
+  font-family: "Inter Tight", sans-serif;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.fermer:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
