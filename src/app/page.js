@@ -18,7 +18,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.hero}>
-          <p className={styles.heroIntro}>
+          <p id="heroIntro" className={styles.heroIntro}>
             <span>I make experience </span>
             <span> for your ears</span>
             <span> for your eyes</span>

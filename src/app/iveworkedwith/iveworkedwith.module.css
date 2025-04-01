@@ -106,6 +106,7 @@
 
 .footer nav li:hover {
   font-size: 50px;
+  margin-left: 10px;
   color: #d0cec6;
 }
 
