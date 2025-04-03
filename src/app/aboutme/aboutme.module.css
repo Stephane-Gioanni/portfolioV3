@@ -309,6 +309,7 @@
   .mainContentLeft p {
     display: flex;
     justify-content: space-between;
+    font-weight: 300;
   }
 
   .heroRight {

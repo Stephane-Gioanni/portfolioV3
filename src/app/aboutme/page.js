@@ -29,34 +29,43 @@ export default function AboutMe() {
         <section className={styles.mainContent}>
           <div className={styles.mainContentLeft}>
             <p>
-              It’s fascinating how what feels like a problem to some can be an
-              opportunity for others. <br />
+              I've always been particularly sensitive to aesthetics. That deep
+              satisfaction when things work in the most efficient and beautiful
+              way possible, as it was meant to be. <br />
               <br />
-              For me, solutions have always come naturally. that's why I suppose
-              it’s no surprise that I became a designer. <br />
-              It started first as sound designer and DJ.
+              And people? I'm not sure why, but understanding and making them
+              feel good has always been something natural for me.
               <br />
-              I’ve always encountered the same challenge with people.
               <br />
-              They know the atmosphere they want but struggle to define or
-              create it. <br />
+              It all started with music: the songs I love to listen to, the
+              emotion they convey, the selection process, my way of playing
+              them, my ability to sense the atmosphere of a place or read a
+              crowd, and how I meticulously organize my playlists.
               <br />
-              On my side, I’ve never seen this as a problem. In fact, I’ve
-              always instinctively understood what needs to be done just by
-              observing the venue, the crowd, and listening to the stakeholders’
-              desires. <br />
               <br />
-              As a designer, I’ve experienced this too. Listening and observing
-              a problematic situation to craft the best solution for it.
+              Then came the visual experience: my eyes constantly drawn to
+              shapes, colors, art, furnitures, architecture, landscapes...
               <br />
-              I’ve learned to love the problem, not the solution, enabling me to
-              find the best outcome. <br />
               <br />
-              And that’s exactly how I see it. I don’t see my clients challenges
-              as obstacles but as opportunities to make things better. <br />
+              Or in my daily routines, I've always found myself constantly
+              refining processes, to optimize how things are organized.
               <br />
-              So, let’s make a deal: Bring me your problem, I’ll bring you a
-              solution.
+              <br />
+              Even when facing difficult situations, I find satisfaction by
+              transforming them into something positive. I've learned to find
+              comfort in discomfort, to fall in love with problems rather than
+              solutions.
+              <br />
+              <br />
+              In some way, I've always tried to improve or make things
+              beautiful, functional, seamless — to create enjoyable experiences.
+              <br />
+              <br />
+              Which is, in reality, the very definition of design.
+              <br />
+              <br />
+              From there, it seemed only natural that I became sound, UI and UX
+              designer.
             </p>
           </div>
           <div className={styles.heroRight}>
