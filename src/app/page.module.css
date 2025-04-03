@@ -6,47 +6,80 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  /* Variables CSS pour personnaliser le Snake */
-  --snake-color: #4caf50; /* Couleur du serpent */
-  --food-color: #e91e63; /* Couleur de la nourriture */
-  --grid-color: #333333; /* Couleur de la grille */
-  --snake-bg-color: #121212; /* Couleur du fond du jeu */
 }
-
-/* styles/globals.css */
 
 .main {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   flex-direction: column;
+  justify-content: center;
   flex: 1;
-  min-height: 100vh;
 }
 
 .hero {
   width: 100%;
-  padding: 0 100px;
   display: flex;
   justify-content: space-between;
-  height: 400px;
+  height: 100%;
+  padding: 40px 0;
 }
 
 .heroIntro {
   font-size: 80px;
-  width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  border-radius: 10px;
 }
 
-.snake {
-  height: 100%;
+.heroLeft {
   width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 100px;
+}
+
+.mind {
+  font-family: "Gaegu", sans-serif;
+  font-style: italic;
+}
+
+.leftBottom {
+  height: 40%;
+  width: 100%;
+}
+
+.imageContainerLeft {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.heroRight {
+  width: 55%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 100px;
+}
+
+.imagesWrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+
+.imageContainer {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .section {
@@ -61,6 +94,7 @@
   background-color: #eaeff2;
   color: black;
 }
+
 .section span {
   font-size: 50px;
   margin: 0 20px;
@@ -80,34 +114,17 @@
 }
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  border-bottom: 1px solid black;
   width: 100%;
-  height: 100%;
-  padding: 0 50px;
-}
-
-.footer nav {
   display: flex;
-  justify-content: space-between;
-  list-style: none;
-  width: 60%;
+  justify-content: flex-end;
 }
 
-.footer nav li {
-  font-size: 50px;
-  margin: 0 20px;
-}
 @keyframes slideText {
   0% {
-    transform: translateX(-70%); /* Commence complètement à gauche */
+    transform: translateX(-70%);
   }
   100% {
-    transform: translateX(
-      calc(100vw + 10%)
-    ); /* Va jusqu'à la fin de l'écran + sa largeur */
+    transform: translateX(calc(100vw + 10%));
   }
 }
 
@@ -117,13 +134,13 @@
   font-size: 30px;
   display: flex;
   align-items: center;
-  overflow: hidden; /* Empêche le texte de dépasser visuellement */
-  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .bande p {
-  animation: slideText 15s linear infinite; /* Défilement fluide */
-  display: inline-block; /* Permet d'éviter les comportements inattendus */
+  animation: slideText 15s linear infinite;
+  display: inline-block;
 }
 
 .bandeAboutme {
@@ -132,17 +149,18 @@
   font-size: 30px;
   display: flex;
   align-items: center;
-  overflow: hidden; /* Empêche le texte de dépasser visuellement */
-  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  overflow: hidden;
+  white-space: nowrap;
 }
+
 .bandeAboutme:hover {
   background-color: #eaeff2;
   color: black;
 }
 
 .bandeAboutme p {
-  animation: slideText 20s linear infinite; /* Défilement fluide */
-  display: inline-block; /* Permet d'éviter les comportements inattendus */
+  animation: slideText 20s linear infinite;
+  display: inline-block;
   border: 1px solid #eaeff2;
   padding: 10px 60px;
   border-radius: 50px;
@@ -151,8 +169,8 @@
 .bandeSelectedWork {
   position: relative;
   width: 100%;
-  height: 60px; /* Ajuste la hauteur en fonction de tes besoins */
-  overflow: hidden; /* Empêche le texte de déborder */
+  height: 60px;
+  overflow: hidden;
 }
 
 .bandeSelectedWork:hover {
@@ -162,10 +180,10 @@
 
 .bandeSelectedWork p {
   position: absolute;
-  white-space: nowrap; /* Empêche le texte de se couper */
-  font-size: 24px; /* Ajuste la taille du texte selon tes besoins */
-  animation: slideEffect 20s linear infinite; /* Animation infinie */
-  right: -10%; /* Commence en dehors de l'écran à droite */
+  white-space: nowrap;
+  font-size: 24px;
+  animation: slideEffect 20s linear infinite;
+  right: -10%;
   font-size: 30px;
   border: 1px solid #eaeff2;
   padding: 10px 60px;
@@ -174,14 +192,14 @@
 
 @keyframes slideEffect {
   0% {
-    right: -10%; /* Le texte commence à droite, hors de l'écran */
+    right: -10%;
   }
   50% {
-    right: 50%; /* Le texte atteint le centre de l'écran */
-    transform: translateX(50%); /* Ajuste pour le centrer */
+    right: 50%;
+    transform: translateX(50%);
   }
   100% {
-    right: 100%; /* Le texte sort complètement à gauche */
+    right: 100%;
   }
 }
 
@@ -191,8 +209,8 @@
   font-size: 30px;
   display: flex;
   align-items: center;
-  overflow: hidden; /* Empêche le texte de dépasser visuellement */
-  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .bandeContact:hover {
@@ -201,24 +219,114 @@
 }
 
 .bandeContact p {
-  animation: slideText 25s linear infinite; /* Défilement fluide */
-  display: inline-block; /* Permet d'éviter les comportements inattendus */
+  animation: slideText 25s linear infinite;
+  display: inline-block;
   border: 1px solid #eaeff2;
   padding: 10px 60px;
   border-radius: 50px;
 }
-
-/*
-SELECTED WORK CSS
-*/
 
 .tel:hover {
   cursor: pointer;
   color: #3f3f38;
 }
 
-/* Style pour l'encadré du Snake */
-.snake:hover {
-  transition: all 0.3s ease;
-  opacity: 0.9;
+/* Responsive */
+@media screen and (max-width: 1600px) {
+  .heroIntro {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .heroIntro {
+    font-size: 60px;
+  }
+  .heroLeft {
+    padding-left: 60px;
+  }
+  .heroRight {
+    padding-right: 60px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .heroIntro {
+    font-size: 50px;
+  }
+  .heroLeft {
+    padding-left: 40px;
+  }
+  .heroRight {
+    padding-right: 40px;
+  }
+}
+
+/* Tablette */
+@media screen and (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .heroLeft {
+    width: 100%;
+    padding: 0 20px 40px 20px;
+  }
+
+  .heroIntro {
+    font-size: 45px;
+  }
+
+  .heroRight {
+    width: 100%;
+    padding: 0;
+  }
+
+  .imagesWrapper {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 450px; /* Hauteur augmentée pour les images */
+    margin-bottom: 20px;
+  }
+
+  .image {
+    border-radius: 0;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .heroIntro {
+    font-size: 36px;
+  }
+
+  .imageContainer {
+    height: 350px;
+  }
+
+  .section {
+    padding: 30px;
+    flex-direction: column;
+  }
+
+  .section p {
+    width: 100%;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heroIntro {
+    font-size: 28px;
+  }
+
+  .imageContainer {
+    height: 300px;
+  }
 }

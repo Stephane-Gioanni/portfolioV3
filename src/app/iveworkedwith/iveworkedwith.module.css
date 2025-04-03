@@ -106,8 +106,7 @@
 
 .footer nav li:hover {
   font-size: 50px;
-  margin-left: 10px;
-  color: #d0cec6;
+  color: #60a5fa;
 }
 
 @keyframes slideText {

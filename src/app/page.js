@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import Image from "next/image";
@@ -15,23 +14,60 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <Header></Header>
-
       <main className={styles.main}>
         <div className={styles.hero}>
-          <p id="heroIntro" className={styles.heroIntro}>
-            <span>I make experience </span>
-            <span> for your ears</span>
-            <span> for your eyes</span>
-            <span> And your mind.</span>
-          </p>
-          <div id="snake" className={styles.snake}>
-            <SnakeGame />
+          <div className={styles.heroLeft}>
+            <p id="heroIntro" className={styles.heroIntro}>
+              <span>
+                I make <span className={styles.experience}>experience</span>{" "}
+              </span>
+              <span>
+                {" "}
+                for your <span className={styles.ears}>ears</span>
+              </span>
+              <span>
+                {" "}
+                for your <span className={styles.eyes}>eyes</span>
+              </span>
+              <span>
+                {" "}
+                And your <span className={styles.mind}>mind</span>.
+              </span>
+            </p>
+          </div>
+
+          <div className={styles.heroRight}>
+            <div className={styles.imagesWrapper}>
+              <div className={styles.imageContainer}>
+                <Image
+                  src="/tel2.jpg"
+                  alt="Description de l'image"
+                  className={styles.image}
+                  fill
+                />
+              </div>
+              <div className={styles.imageContainer}>
+                <Image
+                  src="/tel1.jpg"
+                  alt="Description de l'image"
+                  className={styles.image}
+                  fill
+                />
+              </div>
+            </div>
           </div>
         </div>
-
-        <Footer></Footer>
       </main>
-      <section className={styles.section}>
+      <div className={styles.footer}>
+        {" "}
+        <Footer></Footer>
+      </div>
+    </div>
+  );
+}
+
+{
+  /*  <section className={styles.section}>
         <span>About me</span>
         <p>
           As a sound designer and DJ, I've always encountered the same challenge
@@ -99,7 +135,5 @@ export default function Home() {
             <li className={styles.liSection}>github</li>
           </Link>
         </div>
-      </section>
-    </div>
-  );
+      </section>*/
 }
