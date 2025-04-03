@@ -34,17 +34,25 @@
 
 .liSection {
   list-style: none;
-  width: 250px;
+  width: 350px;
   display: flex;
   justify-content: center;
   font-size: 40px;
 }
 
+.liSection:hover {
+  cursor: pointer;
+}
+
 .tel {
-  width: 250px;
+  width: auto;
   list-style: none;
   font-size: 40px;
-  text-align: center;
+  background-color: gray;
+}
+
+.tel:hover {
+  cursor: pointer;
 }
 
 .footer {
@@ -182,13 +190,12 @@
 
   .bandeFindMe p {
     font-size: 35px;
-    animation: none;
     padding-left: 20px;
   }
 
   .footer {
     height: 120px;
-    padding: 20px 30px;
+    padding: 20px 20px;
     width: 100%;
   }
 
