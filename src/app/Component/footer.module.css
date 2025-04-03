@@ -25,6 +25,7 @@
 
 .contact {
   display: none;
+  width: 100%;
 }
 
 /* Responsive */
@@ -91,9 +92,11 @@
 
   .footer nav li {
     font-size: 36px;
+    width: 100%;
   }
 
   .contact {
-    display: initial;
+    display: block;
+    width: 100%;
   }
 }

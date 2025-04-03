@@ -86,6 +86,9 @@ export default function AboutMe() {
                 <Link href="/iveworkedwith">
                   <li>IveWorkedWith</li>
                 </Link>
+                <li className={styles.contact}>
+                  <Link href="/contact">ContactMe</Link>
+                </li>
               </nav>
             </div>
           </div>

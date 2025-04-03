@@ -99,6 +99,10 @@
   cursor: pointer;
 }
 
+.contact {
+  display: none;
+}
+
 .bandeAboutme {
   width: 100%;
   height: 70px;
@@ -229,7 +233,6 @@
     width: 100%;
     padding: 0;
     order: 2; /* Mettre le conteneur d'images après le texte */
-    margin-bottom: 50px;
   }
   .imagesWrapper {
     display: flex;
@@ -297,7 +300,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 40px 20px;
   }
   .mainContentLeft {
     font-size: 20px;
@@ -312,9 +314,7 @@
   .heroRight {
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
     width: 100%;
-    padding: 0;
   }
 
   .image {
@@ -338,17 +338,14 @@
   .mainContentLeft {
     padding-bottom: 0px;
     margin-bottom: 0;
-    background-color: green;
   }
 
   .main {
-    background-color: red;
     padding: 0;
   }
   .footer {
     height: auto;
     padding: 20px 0;
-    background-color: yellow;
   }
 
   .footer nav {
@@ -358,5 +355,9 @@
 
   .footer nav li {
     font-size: 36px;
+  }
+
+  .contact {
+    display: block;
   }
 }
