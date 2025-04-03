@@ -49,15 +49,20 @@ export default function Contact() {
           </Link>
         </section>
 
-        <div className={styles.footer}>
-          <nav>
-            <Link href="/aboutme">
-              <li> About me</li>
-            </Link>
-            <Link href="/selectedwork">
-              <li> SelectedWork</li>
-            </Link>
-          </nav>
+        <div className={styles.footerContainer}>
+          <div className={styles.footer}>
+            <nav>
+              <Link href="/aboutme">
+                <li> About me</li>
+              </Link>
+              <Link href="/iveworkedwith">
+                <li> IveWorkedWith</li>
+              </Link>
+              <Link href="/selectedwork">
+                <li> SelectedWork</li>
+              </Link>
+            </nav>
+          </div>
         </div>
       </main>
     </div>
