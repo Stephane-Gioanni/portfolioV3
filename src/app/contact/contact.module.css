@@ -11,21 +11,14 @@
 .main {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   flex: 1;
-  min-height: 100vh;
+  max-height: 100vh;
   width: 100%;
+  padding-top: 100px;
 }
 
-.hero {
-  width: 100%;
-}
-
-.heroIntro {
-  font-size: 80px;
-  padding: 20px 0;
-}
 .section {
   margin: 20px 0;
   font-size: 40px;
@@ -34,38 +27,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Utilise 100% de la largeur disponible */
-  flex-direction: row; /* Permet à la section de s'adapter en hauteur selon le contenu */
+  width: 100%;
+  flex-direction: row;
+  box-sizing: border-box;
 }
 
 .liSection {
   list-style: none;
-  width: 400px;
+  width: 250px;
   display: flex;
   justify-content: center;
+  font-size: 40px;
 }
 
 .tel {
-  width: 400px;
+  width: 250px;
   list-style: none;
-}
-
-.contacts {
-  width: 800px;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
   font-size: 40px;
+  text-align: center;
 }
 
 .footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border-bottom: 1px solid black;
   width: 100%;
-  height: 200px;
-  padding: 0 50px;
+  height: 150px;
+
+  box-sizing: border-box;
 }
 
 .footer nav {
@@ -81,30 +70,18 @@
   margin: 0 20px;
 }
 
+.footer nav li:hover {
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
 @keyframes slideText {
   0% {
-    transform: translateX(-70%); /* Commence complètement à gauche */
+    transform: translateX(-70%);
   }
   100% {
-    transform: translateX(
-      calc(100vw + 10%)
-    ); /* Va jusqu'à la fin de l'écran + sa largeur */
+    transform: translateX(calc(100vw + 10%));
   }
-}
-
-.bande {
-  width: 100%;
-  height: 70px;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  overflow: hidden; /* Empêche le texte de dépasser visuellement */
-  white-space: nowrap; /* Empêche le texte de passer à la ligne */
-}
-
-.bande p {
-  animation: slideText 15s linear infinite; /* Défilement fluide */
-  display: inline-block; /* Permet d'éviter les comportements inattendus */
 }
 
 .bandeFindMe {
@@ -113,71 +90,184 @@
   font-size: 30px;
   display: flex;
   align-items: center;
-  overflow: hidden; /* Empêche le texte de dépasser visuellement */
-  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .bandeFindMe p {
-  animation: slideText 20s linear infinite; /* Défilement fluide */
-  display: inline-block; /* Permet d'éviter les comportements inattendus */
+  animation: slideText 20s linear infinite;
+  display: inline-block;
   font-size: 60px;
 }
 
-.bandeAboutme {
-  width: 100%;
-  height: 70px;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  overflow: hidden; /* Empêche le texte de dépasser visuellement */
-  white-space: nowrap; /* Empêche le texte de passer à la ligne */
-}
-
-.bandeAboutme p {
-  animation: slideText 20s linear infinite; /* Défilement fluide */
-  display: inline-block; /* Permet d'éviter les comportements inattendus */
-}
-
-.bandeSelectedWork {
-  position: relative;
-  width: 100%;
-  height: 50px; /* Ajuste la hauteur en fonction de tes besoins */
-  overflow: hidden; /* Empêche le texte de déborder */
-}
-
-.bandeSelectedWork p {
-  position: absolute;
-  white-space: nowrap; /* Empêche le texte de se couper */
-  font-size: 24px; /* Ajuste la taille du texte selon tes besoins */
-  animation: slideEffect 20s linear infinite; /* Animation infinie */
-  right: -10%; /* Commence en dehors de l'écran à droite */
-  font-size: 30px;
-}
-
-@keyframes slideEffect {
-  0% {
-    right: -10%; /* Le texte commence à droite, hors de l'écran */
-  }
-  50% {
-    right: 50%; /* Le texte atteint le centre de l'écran */
-    transform: translateX(50%); /* Ajuste pour le centrer */
-  }
-  100% {
-    right: 100%; /* Le texte sort complètement à gauche */
+@media (max-width: 1600px) {
+  .footer nav {
+    width: 55%;
   }
 }
 
-.bandeContact {
-  width: 100%;
-  height: 70px;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  overflow: hidden; /* Empêche le texte de dépasser visuellement */
-  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+/* Media Queries pour la responsivité */
+@media (max-width: 1200px) {
+  .section {
+    padding: 40px;
+    font-size: 35px;
+  }
+
+  .bandeFindMe p {
+    font-size: 50px;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .footer nav {
+    width: 62%;
+  }
+
+  .footer nav li {
+    font-size: 45px;
+  }
+
+  .liSection,
+  .tel {
+    width: 250px;
+  }
 }
 
-.bandeContact p {
-  animation: slideText 25s linear infinite; /* Défilement fluide */
-  display: inline-block; /* Permet d'éviter les comportements inattendus */
+@media (max-width: 992px) {
+  .section {
+    padding: 30px;
+    font-size: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .bandeFindMe p {
+    font-size: 40px;
+  }
+
+  .footer {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .footer nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer nav li {
+    font-size: 40px;
+  }
+
+  .liSection,
+  .tel {
+    width: 200px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 30px;
+  }
+  .section {
+    padding: 20pxx;
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .bandeFindMe p {
+    font-size: 35px;
+    animation: none;
+    padding-left: 20px;
+  }
+
+  .footer {
+    height: 120px;
+    padding: 20px 30px;
+    width: 100%;
+  }
+
+  .footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .footer nav li {
+    font-size: 35px;
+    margin: 0 15px;
+  }
+
+  .liSection,
+  .tel {
+    width: 160px;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 15px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .bandeFindMe {
+    height: 50px;
+  }
+
+  .bandeFindMe p {
+    font-size: 36px;
+  }
+
+  .footer {
+    height: auto;
+    padding: 20px 20px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer nav li {
+    margin: 0 10px;
+  }
+
+  .liSection,
+  .tel {
+    width: 140px;
+    font-size: 20px;
+    margin: 8px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .section {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .bandeFindMe p {
+    font-size: 24px;
+  }
+
+  .footer nav li {
+    font-size: 22px;
+    margin: 0 8px;
+  }
+
+  .liSection,
+  .tel {
+    width: 100px;
+    font-size: 18px;
+  }
 }

@@ -16,6 +16,16 @@ export default function AboutMe() {
         <div id="bande" className={styles.bandeAboutme}>
           <p> About me</p>
         </div>
+        <div className={styles.imagesWrapperResponse}>
+          <div className={styles.imageContainerResp}>
+            <Image
+              src="/part5.jpg"
+              alt="Description de l'image"
+              className={styles.image}
+              fill
+            />
+          </div>
+        </div>
         <section className={styles.mainContent}>
           <div className={styles.mainContentLeft}>
             <p>
@@ -24,9 +34,12 @@ export default function AboutMe() {
               <br />
               For me, solutions have always come naturally. that's why I suppose
               it’s no surprise that I became a designer. <br />
-              It started first as sound designer and DJ. I’ve always encountered
-              the same challenge with people. They know the atmosphere they want
-              but struggle to define or create it. <br />
+              It started first as sound designer and DJ.
+              <br />
+              I’ve always encountered the same challenge with people.
+              <br />
+              They know the atmosphere they want but struggle to define or
+              create it. <br />
               <br />
               On my side, I’ve never seen this as a problem. In fact, I’ve
               always instinctively understood what needs to be done just by
@@ -34,9 +47,10 @@ export default function AboutMe() {
               desires. <br />
               <br />
               As a designer, I’ve experienced this too. Listening and observing
-              a problematic situation to craft the best solution for it. I’ve
-              learned to love the problem, not the solution, enabling me to find
-              the best outcome. <br />
+              a problematic situation to craft the best solution for it.
+              <br />
+              I’ve learned to love the problem, not the solution, enabling me to
+              find the best outcome. <br />
               <br />
               And that’s exactly how I see it. I don’t see my clients challenges
               as obstacles but as opportunities to make things better. <br />

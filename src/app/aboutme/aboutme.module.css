@@ -23,6 +23,7 @@
   line-height: 50px;
   display: flex;
   justify-content: space-between;
+  padding: 50px 0;
 }
 
 .mainContentLeft {
@@ -47,18 +48,18 @@
   display: flex;
   width: 100%;
   height: 100%;
-  gap: 20px; /* Espace entre les images */
+  gap: 20px;
 }
 
 .imageContainer {
   position: relative;
-  width: 50%; /* Chaque conteneur prend la moitié de l'espace */
-  height: 100%; /* Hauteur fixe, ajustez selon vos besoins */
+  width: 50%;
+  height: 100%;
 }
 
 .image {
-  object-fit: cover; /* Couvre tout le conteneur */
-  border-radius: 8px; /* Coins arrondis, optionnel */
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .contacts {
@@ -87,39 +88,30 @@
   width: 100%;
 }
 
+@keyframes grayscaleShift {
+  0% {
+    color: #eaeff2;
+  } /* Gris foncé */
+  50% {
+    color: #fe0275;
+  } /* Gris clair */
+  75% {
+    color: #c80723;
+  } /* Gris clair */
+  100% {
+    color: #eaeff2;
+  } /* Retour au gris foncé */
+}
+
 .footer nav li {
   font-size: 50px;
 }
 
 .footer nav li:hover {
-  font-size: 50px;
-  color: #60a5fa;
-}
-
-@keyframes slideText {
-  0% {
-    transform: translateX(-70%); /* Commence complètement à gauche */
-  }
-  100% {
-    transform: translateX(
-      calc(100vw + 10%)
-    ); /* Va jusqu'à la fin de l'écran + sa largeur */
-  }
-}
-
-.bande {
-  width: 100%;
-  height: 70px;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  overflow: hidden; /* Empêche le texte de dépasser visuellement */
-  white-space: nowrap; /* Empêche le texte de passer à la ligne */
-}
-
-.bande p {
-  animation: slideText 15s linear infinite; /* Défilement fluide */
-  display: inline-block; /* Permet d'éviter les comportements inattendus */
+  /* color: 
+  /* text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8); */
+  color: #fd55c0;
+  cursor: pointer;
 }
 
 .bandeAboutme {
@@ -129,82 +121,241 @@
   font-size: 30px;
   display: flex;
   align-items: center;
-  overflow: hidden; /* Empêche le texte de dépasser visuellement */
-  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .bandeAboutme p {
-  animation: slideText 20s linear infinite; /* Défilement fluide */
-  display: inline-block; /* Permet d'éviter les comportements inattendus */
+  animation: slideText 10s linear infinite;
+  display: inline-block;
   font-size: 60px;
 }
 
-.bandeAboutmeFooter {
-  width: 100%;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  overflow: hidden; /* Empêche le texte de dépasser visuellement */
-  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+.imagesWrapperResponse {
+  display: none;
 }
 
-.bandeAboutmeFooter p {
-  animation: slideText 20s linear infinite; /* Défilement fluide */
-  display: inline-block; /* Permet d'éviter les comportements inattendus */
-  font-size: 60px;
-}
-
-.bandeAboutmeFooter:hover {
-  background-color: white;
-  color: black;
-}
-
-.bandeSelectedWork {
-  position: relative;
-  width: 100%;
-  height: 70px; /* Ajuste la hauteur en fonction de tes besoins */
-  overflow: hidden; /* Empêche le texte de déborder */
-  padding-top: 5px;
-}
-
-.bandeSelectedWork p {
-  position: absolute;
-  white-space: nowrap; /* Empêche le texte de se couper */
-  font-size: 24px; /* Ajuste la taille du texte selon tes besoins */
-  animation: slideEffect 20s linear infinite; /* Animation infinie */
-  right: -10%; /* Commence en dehors de l'écran à droite */
-  font-size: 30px;
-}
-
-@keyframes slideEffect {
+@keyframes slideText {
   0% {
-    right: -10%; /* Le texte commence à droite, hors de l'écran */
-  }
-  50% {
-    right: 50%; /* Le texte atteint le centre de l'écran */
-    transform: translateX(50%); /* Ajuste pour le centrer */
+    transform: translateX(-70%);
   }
   100% {
-    right: 100%; /* Le texte sort complètement à gauche */
+    transform: translateX(100vw);
   }
 }
 
-.bandeContact {
-  width: 100%;
-  height: 70px;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  overflow: hidden; /* Empêche le texte de dépasser visuellement */
-  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+@media screen and (max-width: 1400px) {
+  .mainContentLeft {
+    width: 100%;
+    padding: 50px 50px;
+    font-size: 30px;
+  }
+
+  .heroRight {
+    width: 100%;
+    height: auto;
+    margin-right: 0; /* Supprimez la marge droite */
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+  }
+
+  .imagesWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    width: 100%;
+    position: static; /* Ou relative selon votre préférence */
+    margin: 0; /* Supprimez les marges */
+    justify-content: center;
+  }
+
+  .footer nav li {
+    font-size: 35px;
+  }
 }
 
-.bandeContact p {
-  animation: slideText 25s linear infinite; /* Défilement fluide */
-  display: inline-block; /* Permet d'éviter les comportements inattendus */
+/* Responsive Breakpoints */
+@media screen and (max-width: 1300px) {
+  .mainContentLeft {
+    padding: 50px 20px;
+    font-size: 25px;
+    width: 50%;
+  }
+
+  .heroRight {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    width: 50%;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .footer nav li {
+    font-size: 30px;
+  }
+
+  .bandeAboutme {
+    margin: 20px 0;
+  }
 }
 
-.bandeContact:hover {
-  background-color: white;
-  color: black;
+@media screen and (max-width: 1200px) {
+  .imagesWrapperResponse {
+    display: block;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+
+  .imageContainerResp {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .mainContent {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+  }
+  .mainContentLeft {
+    font-size: 35px;
+    width: 100%;
+    order: 1; /* Mettre le texte après l'image */
+    padding: 0;
+  }
+  .heroRight {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    width: 100%;
+    padding: 0;
+    order: 2; /* Mettre le conteneur d'images après le texte */
+    margin-bottom: 50px;
+  }
+  .imagesWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .imageContainer:nth-child(2) {
+    display: none; /* Cacher la deuxième image */
+  }
+  .imageContainer:first-child {
+    width: 100%;
+    height: 550px;
+    margin-bottom: 20px;
+    order: -1; /* Placer la première image avant le texte */
+  }
+  .bandeAboutme {
+    overflow: visible;
+    padding: 0 40px;
+    text-align: center;
+  }
+  .bandeAboutme p {
+    font-size: 50px;
+  }
+  .image {
+    border-radius: 0;
+  }
+
+  .footer {
+    height: 150px;
+  }
+
+  .footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .footer nav li {
+    font-size: 45px;
+  }
+
+  /*
+  
+
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  */
+
+  .imagesWrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mainContent {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+  }
+  .mainContentLeft {
+    font-size: 25px;
+    width: 100%;
+  }
+
+  .heroRight {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .image {
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+  .bandeAboutme {
+    overflow: visible;
+    padding: 0 30px;
+
+    text-align: center;
+  }
+
+  .bandeAboutme p {
+    font-size: 36px;
+    animation: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: auto;
+    padding: 20px 15px;
+  }
+
+  .footer nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer nav li {
+    font-size: 36px;
+  }
 }

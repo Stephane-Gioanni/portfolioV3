@@ -63,20 +63,3 @@ export default function Contact() {
     </div>
   );
 }
-
-/*
-<div className={styles.footer}>
-          <div id="bande" className={styles.bandeAboutme}>
-            <Link href="/aboutme">
-              {" "}
-              <p> About me</p>
-            </Link>
-          </div>
-          <div className={styles.bandeSelectedWork}>
-            <Link href="/selectedwork">
-            
-              <p> SelectedWork</p>
-            </Link>
-          </div>
-        </div>
-*/

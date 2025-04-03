@@ -50,7 +50,6 @@
   width: 100%;
   max-width: 90%;
   margin: 0 auto;
-
   min-height: 600px;
 }
 
@@ -342,7 +341,6 @@
 
 .footer nav li:hover {
   font-size: 50px;
-
   color: #60a5fa;
 }
 
@@ -378,6 +376,8 @@
     margin-left: 0;
     width: calc(100% - 50px);
     max-width: 850px;
+    border-left: none; /* Enlever la bordure gauche */
+    border-right: 1.5px solid #eaeff2; /* Ajouter une bordure droite à tous les contenus */
   }
 
   .timelineDotLeft,
@@ -405,7 +405,12 @@
     right: -10px;
     left: auto;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #eaeff2; /* Fixed color */
+    border-color: transparent transparent transparent #eaeff2;
+  }
+
+  /* S'assurer que les éléments timeline sont alignés correctement */
+  .timelineItems {
+    align-items: flex-start;
   }
 }
 
@@ -430,6 +435,7 @@
     width: calc(100% - 45px);
     margin-right: 35px;
     padding: 1.5rem;
+    border-right: 1.5px solid #eaeff2; /* Maintenir la bordure droite */
   }
 
   .timelineTitle {
@@ -490,6 +496,7 @@
     width: calc(100% - 40px);
     margin-right: 30px;
     padding: 1.2rem;
+    border-right: 1.5px solid #eaeff2; /* Maintenir la bordure droite */
   }
 
   .timelineTitle {
