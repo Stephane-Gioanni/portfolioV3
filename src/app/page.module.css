@@ -38,7 +38,7 @@
   flex-direction: column;
   justify-content: space-around;
   padding-left: 100px;
-  filter: blur(0.8px);
+  filter: blur(0.4);
 }
 
 .mind {
