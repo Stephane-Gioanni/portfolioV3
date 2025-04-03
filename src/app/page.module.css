@@ -103,6 +103,7 @@
   }
   .heroLeft {
     padding-left: 40px;
+    min-height: 40vh;
   }
   .heroRight {
     padding-right: 40px;
