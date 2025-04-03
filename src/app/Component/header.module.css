@@ -26,6 +26,7 @@
 }
 .pageTitle {
   font-size: 30px;
+  filter: blur(0.8);
 }
 .letsconnect {
   font-size: 50px;
@@ -33,7 +34,17 @@
 }
 .letsconnect:hover {
   font-size: 50px;
-  color: #60a5fa;
+  filter: blur(0.2);
+}
+
+/* Animation pour le défilement */
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
 }
 
 /* Responsive */
@@ -82,34 +93,46 @@
 @media screen and (max-width: 768px) {
   .header {
     height: auto;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .headerLeft,
-  .headerRight {
+
+  .headerLeft {
+    width: 100%;
+    order: 2; /* Place le headerLeft après le headerRight */
+    padding: 15px 20px;
     height: auto;
   }
-  .pageTitle {
-    font-size: 28px;
-  }
-  .letsconnect {
-    font-size: 36px;
-  }
-  .letsconnect:hover {
-    font-size: 36px;
-  }
-}
 
-@media screen and (max-width: 480px) {
-  .pageTitle {
-    font-size: 24px;
+  .headerRight {
+    width: 100%;
+    height: 80px;
+    order: 1; /* Place le headerRight avant le headerLeft */
+    overflow: hidden;
   }
+
+  .headerRight a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .pageTitle {
+    font-size: 26px;
+  }
+
   .letsconnect {
     font-size: 36px;
+    margin: 0;
+    white-space: nowrap;
+    animation: slideRightToLeft 8s linear infinite;
   }
+
   .letsconnect:hover {
     font-size: 36px;
+    color: #60a5fa;
   }
 }

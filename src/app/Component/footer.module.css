@@ -14,10 +14,12 @@
 }
 .footer nav li {
   font-size: 50px;
+  filter: blur(1.3px);
 }
 .footer nav li:hover {
-  color: #60a5fa;
+  /* color: #60a5fa;*/
   /* text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8); */
+  filter: blur(0.2);
 }
 
 /* Responsive */
