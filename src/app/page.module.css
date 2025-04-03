@@ -46,15 +46,10 @@
   font-style: italic;
 }
 
-.leftBottom {
-  height: 40%;
-  width: 100%;
-}
-
-.imageContainerLeft {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.experience,
+.ears,
+.eyes {
+  /* Styles pour ces éléments si nécessaire */
 }
 
 .heroRight {
@@ -83,153 +78,10 @@
   border-radius: 8px;
 }
 
-.section {
-  margin: 20px 0;
-  padding: 60px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.section:hover {
-  background-color: #eaeff2;
-  color: black;
-}
-
-.section span {
-  font-size: 50px;
-  margin: 0 20px;
-}
-
-.section p {
-  width: 800px;
-  font-size: 30px;
-}
-
-.contacts {
-  width: 800px;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  font-size: 40px;
-}
-
 .footer {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-}
-
-@keyframes slideText {
-  0% {
-    transform: translateX(-70%);
-  }
-  100% {
-    transform: translateX(calc(100vw + 10%));
-  }
-}
-
-.bande {
-  width: 100%;
-  height: 70px;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.bande p {
-  animation: slideText 15s linear infinite;
-  display: inline-block;
-}
-
-.bandeAboutme {
-  width: 100%;
-  height: 70px;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.bandeAboutme:hover {
-  background-color: #eaeff2;
-  color: black;
-}
-
-.bandeAboutme p {
-  animation: slideText 20s linear infinite;
-  display: inline-block;
-  border: 1px solid #eaeff2;
-  padding: 10px 60px;
-  border-radius: 50px;
-}
-
-.bandeSelectedWork {
-  position: relative;
-  width: 100%;
-  height: 60px;
-  overflow: hidden;
-}
-
-.bandeSelectedWork:hover {
-  background-color: #eaeff2;
-  color: black;
-}
-
-.bandeSelectedWork p {
-  position: absolute;
-  white-space: nowrap;
-  font-size: 24px;
-  animation: slideEffect 20s linear infinite;
-  right: -10%;
-  font-size: 30px;
-  border: 1px solid #eaeff2;
-  padding: 10px 60px;
-  border-radius: 50px;
-}
-
-@keyframes slideEffect {
-  0% {
-    right: -10%;
-  }
-  50% {
-    right: 50%;
-    transform: translateX(50%);
-  }
-  100% {
-    right: 100%;
-  }
-}
-
-.bandeContact {
-  width: 100%;
-  height: 70px;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.bandeContact:hover {
-  background-color: #eaeff2;
-  color: black;
-}
-
-.bandeContact p {
-  animation: slideText 25s linear infinite;
-  display: inline-block;
-  border: 1px solid #eaeff2;
-  padding: 10px 60px;
-  border-radius: 50px;
-}
-
-.tel:hover {
-  cursor: pointer;
-  color: #3f3f38;
 }
 
 /* Responsive */
@@ -292,7 +144,7 @@
 
   .imageContainer {
     width: 100%;
-    height: 450px; /* Hauteur augmentée pour les images */
+    height: 450px;
     margin-bottom: 20px;
   }
 
@@ -312,17 +164,6 @@
 
   .imageContainer {
     height: 350px;
-  }
-
-  .section {
-    padding: 30px;
-
-    flex-direction: column;
-  }
-
-  .section p {
-    width: 100%;
-    font-size: 24px;
   }
 }
 
