@@ -310,12 +310,17 @@
     font-size: 25px;
     display: flex;
     flex-direction: column;
-
     width: 100%;
+    padding: 0 20px;
   }
   .mainContentLeft {
-    font-size: 25px;
+    font-size: 20px;
     width: 100%;
+  }
+
+  .mainContentLeft p {
+    display: flex;
+    justify-content: space-between;
   }
 
   .heroRight {
@@ -333,7 +338,7 @@
 
   .bandeAboutme {
     overflow: visible;
-    padding: 0 30px;
+    padding: 0 20px;
 
     text-align: center;
   }
@@ -347,7 +352,7 @@
 @media screen and (max-width: 768px) {
   .footer {
     height: auto;
-    padding: 20px 15px;
+    padding: 20px 0;
   }
 
   .footer nav {

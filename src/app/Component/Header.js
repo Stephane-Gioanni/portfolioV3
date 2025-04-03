@@ -12,7 +12,7 @@ export default function Header() {
       </div>
       <div className={styles.headerRight}>
         <Link href="/contact">
-          <span className={styles.letsconnect}>contact me</span>{" "}
+          <span className={styles.letsconnect}>ContactMe</span>{" "}
         </Link>
       </div>
     </div>
