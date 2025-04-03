@@ -101,7 +101,7 @@
   .headerLeft {
     width: 100%;
     order: 2; /* Place le headerLeft après le headerRight */
-    padding: 15px 20px;
+    padding: 15px 20px 0 20px;
     height: auto;
   }
 
@@ -121,7 +121,7 @@
   }
 
   .pageTitle {
-    font-size: 26px;
+    font-size: 36px;
   }
 
   .letsconnect {

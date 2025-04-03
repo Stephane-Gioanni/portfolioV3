@@ -303,6 +303,9 @@
 
 /* Mobile */
 @media screen and (max-width: 768px) {
+  .hero {
+    padding-top: 10px;
+  }
   .heroIntro {
     font-size: 36px;
   }
@@ -313,6 +316,7 @@
 
   .section {
     padding: 30px;
+
     flex-direction: column;
   }
 
