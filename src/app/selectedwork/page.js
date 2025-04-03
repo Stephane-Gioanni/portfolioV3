@@ -75,7 +75,7 @@ export default function Selectedwork4() {
   const projects = [
     {
       year: 2025,
-      title: "Redesign for Mozilla Firefox ",
+      title: "Rebranding for Mozilla Firefox as individual project",
       description: "UI/UX design",
       storytelling: [
         "As part of an individual project, I worked on rebranding Mozilla Firefox to simplify the process of adding and accessing bookmarks. ",
@@ -103,7 +103,8 @@ export default function Selectedwork4() {
     },
     {
       year: 2025,
-      title: "Wedding planning and management with SixSeptembre",
+      title:
+        "Design and Development of SixSeptembre, a Personalized Wedding Management Platform",
       description: "Web Design - FR",
       storytelling: [
         "As part of a personalized project for a soon-to-be-married couple, I designed and developed an exclusive full-stack web platform dedicated to their special day.",
@@ -142,7 +143,8 @@ export default function Selectedwork4() {
     },
     {
       year: 2024,
-      title: "Label's Digital Identity of Epoche Berlin",
+      title:
+        "Creation of the First Digital Identity for Berlin's Epoche Music Label",
       description: "Web design - GER",
       storytelling: [
         "Until recently, Epoche operated without any digital presence, limiting their growth potential in Berlin's competitive music scene. When they approached me to design their first-ever website, I took on this pivotal project with a clear focus on their specific needs.",
@@ -153,7 +155,7 @@ export default function Selectedwork4() {
       ],
       tools: ["React", "NextJS", "Javascript", "HTML", "CSS"],
       link: "http://epocheberlin.de",
-      linkText: "www.epocheberlin.de",
+      linkText: "epocheberlin.de",
       mainImage: "/epoche.png",
     },
     {
@@ -175,7 +177,7 @@ export default function Selectedwork4() {
     {
       year: "2022-2023-2024",
       title:
-        "DJ and Musical Consultant for the Golden Globes and Variety at Cannes Film Festival",
+        "Musical Consultant and DJ for the Golden Globes and Variety at Cannes Film Festival",
       description: "Sound design - Cannes Film Festival - US & FR",
       storytelling: [
         "Since 2022, I've served as both DJ and technical/musical consultant for the prestigious Golden Globes Awards at the Cannes Film Festival, organized by Variety magazine.",
