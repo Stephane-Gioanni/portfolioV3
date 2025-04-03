@@ -14,6 +14,9 @@ export default function Footer({ setAboutMe }) {
         <Link href="/selectedwork">
           <li>SelectedWork</li>
         </Link>
+        <Link href="/contact">
+          <li className={styles.contact}>ContactMe</li>
+        </Link>
       </nav>
     </div>
   );

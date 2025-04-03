@@ -23,6 +23,10 @@
   cursor: pointer;
 }
 
+.contact {
+  display: none;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 1800px) {
@@ -87,5 +91,9 @@
 
   .footer nav li {
     font-size: 36px;
+  }
+
+  .contact {
+    display: initial;
   }
 }

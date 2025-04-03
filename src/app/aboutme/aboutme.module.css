@@ -95,7 +95,7 @@
 .footer nav li:hover {
   /* color: 
   /* text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8); */
-  border-bottom: 1px solid#eaeff2;
+  border-bottom: 1px solid #eaeff2;
   cursor: pointer;
 }
 
@@ -335,9 +335,20 @@
 }
 
 @media screen and (max-width: 768px) {
+  .mainContentLeft {
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    background-color: green;
+  }
+
+  .main {
+    background-color: red;
+    padding: 0;
+  }
   .footer {
     height: auto;
     padding: 20px 0;
+    background-color: yellow;
   }
 
   .footer nav {
