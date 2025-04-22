@@ -360,15 +360,16 @@ export default function Selectedwork4() {
       <div className={styles.footerContainer}>
         <div className={styles.footer}>
           <nav>
-            <Link href="/aboutme">
-              <li> About me</li>
-            </Link>
-            <Link href="/iveworkedwith">
-              <li> IveWorkedWith</li>
-            </Link>
-            <li className={styles.contact}>
-              <Link href="/contact">ContactMe</Link>
-            </li>
+            <div className={styles.liFooter}>
+              <Link href="/aboutme">
+                <li>AboutMe</li>
+              </Link>
+            </div>
+            <div className={styles.liFooter}>
+              <Link href="/iveworkedwith">
+                <li>IveWorkedWith</li>
+              </Link>
+            </div>
           </nav>
         </div>
       </div>

@@ -73,7 +73,6 @@
 .footer {
   display: flex;
   position: fixed;
-  width: 47%;
   right: 0;
   bottom: 0;
   margin-bottom: 50px;
@@ -86,6 +85,10 @@
   flex-direction: row;
   list-style: none;
   width: 100%;
+}
+
+.liFooter {
+  margin: 0 20px;
 }
 
 .footer nav li {
@@ -257,6 +260,10 @@
   }
   .image {
     border-radius: 0;
+  }
+
+  .liFooter {
+    margin: 0;
   }
 
   .footer {

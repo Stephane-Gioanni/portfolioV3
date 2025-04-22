@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 55%;
   height: 150px;
   padding-right: 100px;
 }
@@ -12,6 +11,11 @@
   list-style: none;
   width: 100%;
 }
+
+.liFooter {
+  margin: 0 20px;
+}
+
 .footer nav li {
   font-size: 50px;
   filter: blur(0.4);
@@ -64,6 +68,10 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+  }
+
+  .liFooter {
+    margin: 0;
   }
 
   .footer nav {

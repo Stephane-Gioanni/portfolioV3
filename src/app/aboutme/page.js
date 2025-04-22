@@ -89,15 +89,16 @@ export default function AboutMe() {
             </div>
             <div className={styles.footer}>
               <nav>
-                <Link href="/selectedwork">
-                  <li> SelectedWork</li>
-                </Link>
-                <Link href="/iveworkedwith">
-                  <li>IveWorkedWith</li>
-                </Link>
-                <li className={styles.contact}>
-                  <Link href="/contact">ContactMe</Link>
-                </li>
+                <div className={styles.liFooter}>
+                  <Link href="/selectedwork">
+                    <li>SelectedWork</li>
+                  </Link>
+                </div>
+                <div className={styles.liFooter}>
+                  <Link href="/iveworkedwith">
+                    <li>IveWorkedWith</li>
+                  </Link>
+                </div>
               </nav>
             </div>
           </div>

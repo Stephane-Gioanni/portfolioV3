@@ -5,18 +5,23 @@ export default function Footer({ setAboutMe }) {
   return (
     <div className={styles.footer}>
       <nav>
-        <Link href="/aboutme">
-          <li>AboutMe</li>
-        </Link>
-        <Link href="/iveworkedwith">
-          <li>IveWorkedWith</li>
-        </Link>
-        <Link href="/selectedwork">
-          <li>SelectedWork</li>
-        </Link>
-        <Link href="/contact">
-          <li className={styles.contact}>ContactMe</li>
-        </Link>
+        <div className={styles.liFooter}>
+          <Link href="/aboutme">
+            <li>AboutMe</li>
+          </Link>
+        </div>
+
+        <div className={styles.liFooter}>
+          <Link href="/iveworkedwith">
+            <li>IveWorkedWith</li>
+          </Link>
+        </div>
+
+        <div className={styles.liFooter}>
+          <Link href="/selectedwork">
+            <li>SelectedWork</li>
+          </Link>
+        </div>
       </nav>
     </div>
   );

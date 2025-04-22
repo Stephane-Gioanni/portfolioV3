@@ -89,12 +89,16 @@ export default function Iveworkedwith() {
           <div className={styles.mainRight}>
             <div className={styles.footer}>
               <nav>
-                <Link href="/aboutme">
-                  <li> AboutMe</li>
-                </Link>
-                <Link href="/selectedwork">
-                  <li> SelectedWork</li>
-                </Link>
+                <div className={styles.liFooter}>
+                  <Link href="/aboutme">
+                    <li>AboutMe</li>
+                  </Link>
+                </div>
+                <div className={styles.liFooter}>
+                  <Link href="/selectedwork">
+                    <li>SelectedWork</li>
+                  </Link>
+                </div>
               </nav>
             </div>
           </div>
