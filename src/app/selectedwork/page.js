@@ -74,6 +74,39 @@ export default function Selectedwork4() {
 
   const projects = [
     {
+      year: "Apr 2025",
+      title: "Wellness App",
+      description: "UI/UX design",
+      storytelling: [
+        "For a school project, I designed with another student a mental health app targeting individuals undergoing career transitions — a stressful and often overlooked phase.",
+        "We started with a complete UX strategy, including competitive analysis, surveys, and qualitative interviews, which revealed a strong need for emotional support, motivation tools, and community engagement.",
+        "Based on our findings, we created a detailed persona and user journey, leading to a prototype focused on personalized routines, a journaling feature, community spaces, and meditation integration.",
+        "User testing confirmed the app’s relevance and usability, with minor adjustments suggested for clarity and mobile optimization. ",
+        "The final high-fidelity prototype was well received and highlighted during our storytelling-led presentation.",
+      ],
+      tools: [
+        "Figma",
+        "UX Research",
+        "Usability Testing",
+        "Persona & Journey Mapping",
+        "MoSCoW Method",
+        "Storytelling",
+        "Presentation",
+      ],
+      link: "https://www.figma.com/proto/dcwia6IdoSsr1yGzLQpprX/--P4-Team-2---Design-File?page-id=6192%3A38476&node-id=6365-6482&viewport=-954%2C762%2C0.25&t=dFTZwaIpuOndo5Ai-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6209%3A6943",
+      linkText: "Figma prototype here",
+      caseStudyLink:
+        "https://medium.com/@stephane.gioanni/case-study-daily-health-conference-wellness-app-3374e806dc95",
+      caseStudy: "Case study",
+      mainImage: "/wellnessTopic.png",
+      additionalImages: [
+        {
+          src: "/wellnessMeditation.png",
+          alt: "Screeshot wellness app",
+        },
+      ],
+    },
+    {
       year: "Mar 2025",
       title: "Rebranding for Mozilla Firefox as individual project",
       description: "UI/UX design",
@@ -302,16 +335,29 @@ export default function Selectedwork4() {
                     )}
 
                     {project.link && (
-                      <Link href={project.link} className={styles.timelineLink}>
-                        {project.linkText || "En savoir plus"}
+                      <Link href={project.link} legacyBehavior passHref>
+                        <a
+                          className={styles.timelineLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {project.linkText || "En savoir plus"}
+                        </a>
                       </Link>
                     )}
                     {project.caseStudyLink && (
                       <Link
                         href={project.caseStudyLink}
-                        className={styles.caseStudyLink}
+                        legacyBehavior
+                        passHref
                       >
-                        {project.caseStudy || "En savoir plus"}
+                        <a
+                          className={styles.caseStudyLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {project.caseStudy || "En savoir plus"}
+                        </a>
                       </Link>
                     )}
 
@@ -328,16 +374,27 @@ export default function Selectedwork4() {
                     )}
                     {project.additionalImages &&
                       project.additionalImages.map((img, imgIndex) => (
-                        <Link key={imgIndex} href={img.link || "#"}>
-                          <div className={styles.timelineImageContainer}>
-                            <Image
-                              src={img.src}
-                              alt={img.alt || project.title}
-                              width={600}
-                              height={360}
-                              className={styles.timelineImage}
-                            />
-                          </div>
+                        <Link
+                          key={imgIndex}
+                          href={img.link || "#"}
+                          legacyBehavior
+                          passHref
+                        >
+                          <a
+                            className={styles.timelineImageLink} // Utiliser une autre classe pour le lien
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <div className={styles.timelineImageContainer}>
+                              <Image
+                                src={img.src}
+                                alt={img.alt || project.title}
+                                width={600}
+                                height={360}
+                                className={styles.timelineImage}
+                              />
+                            </div>
+                          </a>
                         </Link>
                       ))}
                     {project.embed && (
@@ -373,6 +430,13 @@ export default function Selectedwork4() {
       <div className={styles.footerContainer}>
         <div className={styles.footer}>
           <nav>
+            <div className={styles.contact}>
+              <div className={styles.liFooter}>
+                <Link href="/contact">
+                  <li>Contact</li>
+                </Link>
+              </div>
+            </div>
             <div className={styles.liFooter}>
               <Link href="/aboutme">
                 <li>AboutMe</li>

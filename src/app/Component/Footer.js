@@ -5,6 +5,13 @@ export default function Footer({ setAboutMe }) {
   return (
     <div className={styles.footer}>
       <nav>
+        <div className={styles.contact}>
+          <div className={styles.liFooter}>
+            <Link href="/contact">
+              <li>Contact</li>
+            </Link>
+          </div>
+        </div>
         <div className={styles.liFooter}>
           <Link href="/aboutme">
             <li>AboutMe</li>
