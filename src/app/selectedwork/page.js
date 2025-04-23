@@ -6,9 +6,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { AiOutlineArrowUp, AiOutlineArrowDown } from "react-icons/ai"; // Vous devrez installer ce package si vous ne l'avez pas
 
 export default function Selectedwork4() {
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [isAtBottom, setIsAtBottom] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,14 +26,10 @@ export default function Selectedwork4() {
       const windowHeight = window.innerHeight;
       const documentHeight = document.body.scrollHeight;
 
-      // Calcul simplifié mais plus fiable pour assurer que la barre atteint 100%
-      // quand l'utilisateur atteint le bas de la page
-
       // Position de défilement où la timeline devient visible
       const timelineStartsAt = Math.max(0, timelineTop - windowHeight);
 
       // Position de défilement où la timeline est complètement défilée
-      // On soustrait une petite marge pour s'assurer d'atteindre 100%
       const timelineEndsAt = timelineTop + timelineHeight - windowHeight * 0.5;
 
       // Calculer la progression comme un pourcentage entre le début et la fin
@@ -56,8 +54,13 @@ export default function Selectedwork4() {
 
       setScrollProgress(progress);
 
-      // Debug - à enlever en production
-      // console.log(`Progress: ${Math.round(progress * 100)}%, Position: ${scrollPosition}, Start: ${timelineStartsAt}, End: ${timelineEndsAt}`);
+      // Déterminer si on est proche du bas de la page
+      const scrolled = window.scrollY;
+      const viewportHeight = window.innerHeight;
+      const fullHeight = document.documentElement.scrollHeight;
+
+      // Considérer qu'on est au bas de la page si on est à moins de 100px du bas
+      setIsAtBottom(scrolled + viewportHeight >= fullHeight - 100);
     };
 
     // Ajouter l'écouteur d'événement de défilement
@@ -71,6 +74,21 @@ export default function Selectedwork4() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // Ajoutez ces fonctions de navigation
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    });
+  };
 
   const projects = [
     {
@@ -449,6 +467,17 @@ export default function Selectedwork4() {
             </div>
           </nav>
         </div>
+      </div>
+      <div className={styles.mobileNavButton}>
+        {isAtBottom ? (
+          <button onClick={scrollToTop} aria-label="Scroll to top">
+            <AiOutlineArrowUp />
+          </button>
+        ) : (
+          <button onClick={scrollToBottom} aria-label="Scroll to bottom">
+            <AiOutlineArrowDown />
+          </button>
+        )}
       </div>
     </div>
   );
