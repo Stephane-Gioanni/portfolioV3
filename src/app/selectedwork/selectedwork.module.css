@@ -1,9 +1,17 @@
 .mobileNavButton {
   display: none; /* Caché par défaut */
   position: fixed;
-  top: 20px;
+  bottom: 20px;
   right: 20px;
   z-index: 1000;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mobileNavButton.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .mobileNavButton button {

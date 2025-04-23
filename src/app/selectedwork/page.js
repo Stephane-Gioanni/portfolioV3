@@ -11,6 +11,7 @@ import { AiOutlineArrowUp, AiOutlineArrowDown } from "react-icons/ai"; // Vous d
 export default function Selectedwork4() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isAtBottom, setIsAtBottom] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,6 +62,10 @@ export default function Selectedwork4() {
 
       // Considérer qu'on est au bas de la page si on est à moins de 100px du bas
       setIsAtBottom(scrolled + viewportHeight >= fullHeight - 100);
+
+      // Détecter si l'utilisateur a défilé suffisamment pour afficher le bouton
+      // On définit un seuil de défilement (par exemple 200px)
+      setHasScrolled(scrolled > 200);
     };
 
     // Ajouter l'écouteur d'événement de défilement
@@ -468,13 +473,17 @@ export default function Selectedwork4() {
           </nav>
         </div>
       </div>
-      <div className={styles.mobileNavButton}>
+      <div
+        className={`${styles.mobileNavButton} ${
+          hasScrolled ? styles.visible : ""
+        }`}
+      >
         {isAtBottom ? (
-          <button onClick={scrollToTop} aria-label="Scroll to top">
+          <button onClick={scrollToTop} aria-label="Remonter en haut">
             <AiOutlineArrowUp />
           </button>
         ) : (
-          <button onClick={scrollToBottom} aria-label="Scroll to bottom">
+          <button onClick={scrollToBottom} aria-label="Descendre en bas">
             <AiOutlineArrowDown />
           </button>
         )}
