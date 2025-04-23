@@ -162,8 +162,8 @@
   display: flex;
   justify-content: flex-end;
   position: fixed;
-  right: 80;
-  bottom: 80;
+  right: 80px; /* Ajout de l'unité px */
+  bottom: 80px; /* Ajout de l'unité px */
 }
 
 .footer nav {

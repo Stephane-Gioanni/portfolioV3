@@ -1,7 +1,6 @@
 "use client";
 
 import Header from "../Component/Header";
-import Footer from "../Component/Footer";
 import styles from "./iveworkedwith.module.css";
 import Link from "next/link";
 import Image from "next/image";
