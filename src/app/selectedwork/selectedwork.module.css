@@ -43,12 +43,15 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  position: fixed;
+  bottom: 0;
+  background-color: #121212;
 }
 
 .footer {
   display: flex;
   align-items: center;
-  height: 150px;
+  height: 100px;
   padding-right: 100px;
 }
 
@@ -555,6 +558,9 @@
 }
 
 @media (max-width: 576px) {
+  .main {
+    margin-bottom: 100px;
+  }
   .footer {
     height: auto;
     justify-content: center;
