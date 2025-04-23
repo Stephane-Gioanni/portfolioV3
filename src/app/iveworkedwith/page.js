@@ -10,20 +10,13 @@ const partners = [
   { name: "Golden Globes", country: "US", image: "/logos/goldenglobes.png" },
   { name: "Variety", country: "US", image: "/logos/variety.png" },
   { name: "Groupe Barrière", country: "FR", image: "/logos/barriere.jpeg" },
-  { name: "Mama Shelter", country: "UK", image: "/logos/mamashelter.png" },
   { name: "Hotel Costes", country: "FR", image: "/logos/costes.png" },
+  { name: "Mama Shelter", country: "UK", image: "/logos/mamashelter.png" },
   { name: "Innovision events", country: "UK", image: "/logos/innovision.png" },
   { name: "Le Perchoir Group", country: "FR", image: "/logos/leperchoir.jpeg" },
   { name: "Groupe Beaumarly", country: "FR", image: "/logos/beaumarly.jpeg" },
   { name: "DB Group", country: "FR", image: "/logos/dbgroup.png" },
 
-  { name: "We are BMF", country: "UK", image: "/logos/bmf.jpeg" },
-  {
-    name: "Maison Serieuse",
-    country: "FR",
-    image: "/logos/maisonserieuse.jpeg",
-  },
-  { name: "Jonge Honden", country: "NL", image: "/logos/jongehonden.png" },
   { name: "Northlamb Records", country: "FR", image: "/logos/northlamb.png" },
 
   {
@@ -33,10 +26,19 @@ const partners = [
   },
 
   { name: "Pierre Augustin Rose", country: "FR", image: "/logos/pierre.png" },
+  { name: "We are BMF", country: "UK", image: "/logos/bmf.jpeg" },
+  {
+    name: "Maison Serieuse",
+    country: "FR",
+    image: "/logos/maisonserieuse.jpeg",
+  },
+  { name: "Jonge Honden", country: "NL", image: "/logos/jongehonden.png" },
 
-  { name: "Stockfish", country: "FR", image: "/logos/stockfish.png" },
-  { name: "Baoli Group", country: "FR", image: "/logos/baoli.jpeg" },
+  { name: "And more", country: "..." },
+
   /*
+    { name: "Baoli Group", country: "FR", image: "/logos/baoli.jpeg" },
+
   { name: "Epoche", country: "GER" },
   { name: "Chez Elles", country: "UK" },
   { name: "Rhrude", country: "ES" },
@@ -58,20 +60,21 @@ export default function Iveworkedwith() {
             {partners.map((partner, index) => (
               <li key={index} className={styles.partnerItem}>
                 {partner.image && (
-                  <Image
-                    src={partner.image}
-                    alt={`${partner.name} logo`}
-                    width={100}
-                    height={100}
-                    className={styles.partnerLogo}
-                  />
+                  <div className={styles.partnerLogoWrapper}>
+                    <Image
+                      src={partner.image}
+                      alt={`${partner.name} logo`}
+                      width={100}
+                      height={100}
+                      className={styles.partnerLogo}
+                    />
+                  </div>
                 )}
                 <span>
                   {partner.name} ({partner.country})
                 </span>
               </li>
             ))}
-            <li>and more..</li>
           </ul>
 
           <div className={styles.mainRight}>

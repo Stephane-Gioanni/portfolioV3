@@ -40,13 +40,25 @@ export default function Contact() {
             </li>
           )}
 
-          <Link href="https://www.linkedin.com/in/stephane--g/">
-            <li className={styles.liSection}>linkedin</li>
-          </Link>
+          <li className={styles.liSection}>
+            <a
+              href="https://www.linkedin.com/in/stephane--g/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin
+            </a>
+          </li>
 
-          <Link href="https://github.com/Stephane-Gioanni">
-            <li className={styles.liSection}>github</li>
-          </Link>
+          <li className={styles.liSection}>
+            <a
+              href="https://github.com/Stephane-Gioanni"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github
+            </a>
+          </li>
         </section>
 
         <div className={styles.footerContainer}>
