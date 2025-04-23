@@ -276,6 +276,9 @@
   font-weight: 500;
   font-size: 18px;
   transition: color 0.3s, transform 0.3s;
+  padding: 10px;
+  border-radius: 100px;
+  border: 1px solid #3b82f6;
 }
 
 .caseStudyLink {
@@ -287,6 +290,9 @@
   font-size: 18px;
   transition: color 0.3s, transform 0.3s;
   margin-left: 20px;
+  padding: 10px;
+  border-radius: 100px;
+  border: 1px solid #3b82f6;
 }
 
 .timelineLink:hover {

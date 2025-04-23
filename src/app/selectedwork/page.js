@@ -78,11 +78,11 @@ export default function Selectedwork4() {
       title: "Wellness App",
       description: "UI/UX design",
       storytelling: [
-        "For a school project, I designed with another student a mental health app targeting individuals undergoing career transitions — a stressful and often overlooked phase.",
+        "For a school project, I designed with another student a mental health app targeting individuals undergoing career transitions, a stressful and often overlooked phase.",
         "We started with a complete UX strategy, including competitive analysis, surveys, and qualitative interviews, which revealed a strong need for emotional support, motivation tools, and community engagement.",
         "Based on our findings, we created a detailed persona and user journey, leading to a prototype focused on personalized routines, a journaling feature, community spaces, and meditation integration.",
         "User testing confirmed the app’s relevance and usability, with minor adjustments suggested for clarity and mobile optimization. ",
-        "The final high-fidelity prototype was well received and highlighted during our storytelling-led presentation.",
+        "The final high-fidelity prototype was positively received and effectively showcased through a narrative-driven presentation highlighting our user-centered design process.",
       ],
       tools: [
         "Figma",
@@ -94,7 +94,7 @@ export default function Selectedwork4() {
         "Presentation",
       ],
       link: "https://www.figma.com/proto/dcwia6IdoSsr1yGzLQpprX/--P4-Team-2---Design-File?page-id=6192%3A38476&node-id=6365-6482&viewport=-954%2C762%2C0.25&t=dFTZwaIpuOndo5Ai-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6209%3A6943",
-      linkText: "Figma prototype here",
+      linkText: "Figma prototype",
       caseStudyLink:
         "https://medium.com/@stephane.gioanni/case-study-daily-health-conference-wellness-app-3374e806dc95",
       caseStudy: "Case study",
@@ -119,7 +119,7 @@ export default function Selectedwork4() {
       ],
       tools: ["Figma", "Usability testing"],
       link: "https://www.figma.com/proto/CnwGdVa1c7dHqIbts98rv3/%5B-P3-%5D-App-Redesign---Stephane?page-id=3006%3A2&node-id=5047-2204&viewport=-4396%2C4434%2C1&t=6bao2fFv4bNyf5yv-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=5047%3A2204",
-      linkText: "Figma prototype here",
+      linkText: "Figma prototype",
       caseStudyLink:
         "https://medium.com/@stephane.gioanni/p3-rebranding-mozilla-firefox-improving-access-to-bookmarks-6f97f67b959b",
       caseStudy: "Case study",
@@ -170,7 +170,7 @@ export default function Selectedwork4() {
       storytelling: [
         "Until recently, Epoche operated without any digital presence, limiting their growth potential in Berlin's competitive music scene. When they approached me to design their first-ever website, I took on this pivotal project with a clear focus on their specific needs.",
         "Working closely with the label owner and their graphic designer, I created a digital experience that authentically captured Epoche's distinctive artistic vision.",
-        "Through collaborative sessions, I developed a streamlined site structure showcasing their upcoming events, resident artist profiles, and contact information—exactly what they needed to establish their online presence.",
+        "Through collaborative sessions, I developed a streamlined site structure showcasing their upcoming events, resident artist profiles, and contact information. Exactly what they needed to establish their online presence.",
         "The responsive interface features intuitive navigation and clear visual hierarchy while preserving the label's underground aesthetic.",
         "Through regular design reviews, I ensured the final product perfectly balanced their artistic vision with usability best practices, providing Epoche with the digital foundation needed to amplify their presence in Berlin's electronic music landscape.",
       ],
@@ -186,7 +186,7 @@ export default function Selectedwork4() {
       description: "Web design - FR",
       storytelling: [
         "For Northlamb Records, an independent French music label, I created a distinctive landing page that perfectly captures their unique identity.",
-        "Working closely with the label team, I developed a minimalist yet character-filled interface, dominated by a VHS background effect and interactive elements that respond to user interaction—much like their music responds to listeners.",
+        "Working closely with the label team, I developed a minimalist yet character-filled interface, dominated by a VHS background effect and interactive elements that respond to user interaction much like their music responds to listeners.",
         "This clean design approach allows visitors to instantly access all essential information while experiencing the label's aesthetic.",
         "The project focused exclusively on front-end development, balancing visual impact with intuitive navigation to ensure the landing page effectively conveys the essence of Northlamb's musical universe across all devices.",
       ],
