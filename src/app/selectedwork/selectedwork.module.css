@@ -143,7 +143,7 @@
   position: absolute;
   left: 50%;
   width: 8px;
-  background-color: #96b7c4;
+  background-color: #6693bb;
   top: 0;
   transform: translateX(-50%);
   z-index: 2;
@@ -295,13 +295,13 @@
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
-  border-left: 3px solid #96b7c4;
+  border-left: 3px solid #ae5c53;
 }
 
 .timelineToolsTitle {
   font-size: 18px;
   font-weight: 600;
-  color: #96b7c4;
+  color: #ae5c53;
   margin-bottom: 0.5rem;
 }
 
@@ -314,7 +314,7 @@
 
 .timelineLink {
   display: inline-block;
-  color: #96b7c4;
+  color: #6693bb;
   text-decoration: none;
   margin-bottom: 1.2rem;
   font-weight: 500;
@@ -322,7 +322,7 @@
   transition: color 0.3s, transform 0.3s;
   padding: 10px;
   border-radius: 100px;
-  border: 1px solid #96b7c4;
+  border: 1px solid #6693bb;
 }
 
 /*
@@ -332,7 +332,7 @@ color: #3b82f6;
 
 .caseStudyLink {
   display: inline-block;
-  color: #96b7c4;
+  color: #6693bb;
   text-decoration: none;
   margin-bottom: 1.2rem;
   font-weight: 500;
@@ -341,7 +341,7 @@ color: #3b82f6;
   margin-left: 20px;
   padding: 10px;
   border-radius: 100px;
-  border: 1px solid #96b7c4;
+  border: 1px solid #6693bb;
 }
 
 .timelineLink:hover {
