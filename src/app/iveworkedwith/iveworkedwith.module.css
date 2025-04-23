@@ -93,11 +93,36 @@
   list-style: none;
   line-height: 25px;
   padding-left: 100px;
+  gap: 15px;
 }
 
+/*
+.workWithList li {
+  display: inline-flex; 
+  align-items: center; 
+  border-radius: 20px;
+  background-color: green;
+  height: 70px;
+}
+*/
+
 .workWithList span {
-  font-size: 16px;
-  margin-left: 5px;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.partnerItem {
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Important pour que le border-radius s'applique à l'image */
+  height: 100px;
+}
+
+.partnerLogo {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  object-fit: contain;
 }
 
 .contacts {
@@ -106,6 +131,10 @@
   display: flex;
   justify-content: space-between;
   font-size: 40px;
+}
+
+.contact {
+  display: none;
 }
 
 /*
@@ -123,7 +152,8 @@
 .footer {
   display: flex;
   justify-content: flex-end;
-  padding-right: 100px;
+  position: fixed;
+  right: 80;
 }
 
 .footer nav {
@@ -312,6 +342,8 @@
   .footer {
     display: flex;
     justify-content: flex-start;
+    width: 100%;
+    position: static;
   }
 
   .footer nav li {
@@ -333,7 +365,7 @@
 
   .mainRight {
     height: 100px;
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -342,6 +374,7 @@
 
   .liFooter {
     margin: 0;
+    width: 100%;
   }
 
   .footer {
@@ -353,9 +386,11 @@
     flex-direction: column;
     justify-content: space-around;
     gap: 15px;
+    width: 100%;
   }
   .footer nav li {
     font-size: 45px;
+    width: 100%;
   }
 }
 
@@ -377,5 +412,9 @@
 
   .footer nav li {
     font-size: 36px;
+  }
+
+  .contact {
+    display: block;
   }
 }
