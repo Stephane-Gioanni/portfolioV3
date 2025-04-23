@@ -5,8 +5,6 @@ import Link from "next/link";
 export default function Mozillaframe1() {
   return (
     <div className={styles.main}>
-      <span>Fermer</span>
-
       <Image
         src="/frame111.jpg"
         alt="Heuristic analysis"
@@ -14,7 +12,7 @@ export default function Mozillaframe1() {
         className={styles.image}
       ></Image>
       <Link href="/selectedwork">
-        <span className={styles.fermer}>Fermer</span>
+        <span className={styles.fermer}>Close</span>
       </Link>
     </div>
   );

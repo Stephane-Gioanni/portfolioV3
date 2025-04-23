@@ -74,7 +74,7 @@ export default function Selectedwork4() {
 
   const projects = [
     {
-      year: 2025,
+      year: "Mar 2025",
       title: "Rebranding for Mozilla Firefox as individual project",
       description: "UI/UX design",
       storytelling: [
@@ -87,6 +87,9 @@ export default function Selectedwork4() {
       tools: ["Figma", "Usability testing"],
       link: "https://www.figma.com/proto/CnwGdVa1c7dHqIbts98rv3/%5B-P3-%5D-App-Redesign---Stephane?page-id=3006%3A2&node-id=5047-2204&viewport=-4396%2C4434%2C1&t=6bao2fFv4bNyf5yv-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=5047%3A2204",
       linkText: "Figma prototype here",
+      caseStudyLink:
+        "https://medium.com/@stephane.gioanni/p3-rebranding-mozilla-firefox-improving-access-to-bookmarks-6f97f67b959b",
+      caseStudy: "Case study",
       mainImage: "/mozilla.png",
       additionalImages: [
         {
@@ -102,7 +105,7 @@ export default function Selectedwork4() {
       ],
     },
     {
-      year: 2025,
+      year: "Feb 2025",
       title:
         "Design and Development of SixSeptembre, a Personalized Wedding Management Platform",
       description: "Web Design - FR",
@@ -125,24 +128,9 @@ export default function Selectedwork4() {
       linkText: "sixseptembre.com",
       mainImage: "/sixseptembre.png",
     },
+
     {
-      year: 2024,
-      title:
-        "Branding and Development of the Landing Page for Northlamb Records",
-      description: "Web design - FR",
-      storytelling: [
-        "For Northlamb Records, an independent French music label, I created a distinctive landing page that perfectly captures their unique identity.",
-        "Working closely with the label team, I developed a minimalist yet character-filled interface, dominated by a VHS background effect and interactive elements that respond to user interaction—much like their music responds to listeners.",
-        "This clean design approach allows visitors to instantly access all essential information while experiencing the label's aesthetic.",
-        "The project focused exclusively on front-end development, balancing visual impact with intuitive navigation to ensure the landing page effectively conveys the essence of Northlamb's musical universe across all devices.",
-      ],
-      tools: ["React", "NextJS", "Javascript", "HTML", "CSS"],
-      link: "http://northlamb.club",
-      linkText: "northlamb.club",
-      mainImage: "/northlamb.png",
-    },
-    {
-      year: 2024,
+      year: "Dec 2024",
       title:
         "Creation of the First Digital Identity for Berlin's Epoche Music Label",
       description: "Web design - GER",
@@ -159,7 +147,23 @@ export default function Selectedwork4() {
       mainImage: "/epoche.png",
     },
     {
-      year: 2023,
+      year: "Oct 2024",
+      title:
+        "Branding and Development of the Landing Page for Northlamb Records",
+      description: "Web design - FR",
+      storytelling: [
+        "For Northlamb Records, an independent French music label, I created a distinctive landing page that perfectly captures their unique identity.",
+        "Working closely with the label team, I developed a minimalist yet character-filled interface, dominated by a VHS background effect and interactive elements that respond to user interaction—much like their music responds to listeners.",
+        "This clean design approach allows visitors to instantly access all essential information while experiencing the label's aesthetic.",
+        "The project focused exclusively on front-end development, balancing visual impact with intuitive navigation to ensure the landing page effectively conveys the essence of Northlamb's musical universe across all devices.",
+      ],
+      tools: ["React", "NextJS", "Javascript", "HTML", "CSS"],
+      link: "http://northlamb.club",
+      linkText: "northlamb.club",
+      mainImage: "/northlamb.png",
+    },
+    {
+      year: "Jun 2023",
       title: "Curated Sound Experience for BMF at Cannes Lions",
       description: "Sound design - Cannes Lions - UK & FR",
       storytelling: [
@@ -236,7 +240,7 @@ export default function Selectedwork4() {
                     }
                   >
                     {isMultiYear ? (
-                      <span
+                      <div
                         className={`${
                           isLeft
                             ? styles.timelineYearLeft
@@ -249,7 +253,7 @@ export default function Selectedwork4() {
                           .map((year, i) => (
                             <span key={i}>{year}</span>
                           ))}
-                      </span>
+                      </div>
                     ) : (
                       <span
                         className={
@@ -302,6 +306,15 @@ export default function Selectedwork4() {
                         {project.linkText || "En savoir plus"}
                       </Link>
                     )}
+                    {project.caseStudyLink && (
+                      <Link
+                        href={project.caseStudyLink}
+                        className={styles.caseStudyLink}
+                      >
+                        {project.caseStudy || "En savoir plus"}
+                      </Link>
+                    )}
+
                     {project.mainImage && (
                       <div className={styles.timelineImageContainer}>
                         <Image

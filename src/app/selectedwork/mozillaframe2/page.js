@@ -12,7 +12,7 @@ export default function Mozillaframe2() {
         className={styles.image}
       ></Image>
       <Link href="/selectedwork">
-        <span className={styles.fermer}>Fermer</span>
+        <span className={styles.fermer}>Close</span>
       </Link>
     </div>
   );
