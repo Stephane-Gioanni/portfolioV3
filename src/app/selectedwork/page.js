@@ -98,13 +98,48 @@ export default function Selectedwork4() {
   const projects = [
     {
       year: "Apr 2025",
+      title: "Pawmatch",
+      description: "UI/UX design",
+      storytelling: [
+        "For a bootcamp final project, I collaborated with a teammate to design Pawmatch, a pet-sitting app connecting pet owners with trusted sitters through a playful matching system inspired by dating app.",
+        "We conducted comprehensive UX research including stakeholder interviews, 10 qualitative user interviews (5 pet owners, 5 pet sitters), and quantitative surveys to understand both user perspectives and identify key pain points like trust issues and lack of detailed pet information.",
+        "Our research informed the creation of dual personas and user journey maps, leading to a problem statement that guided our ideation process using methods like Crazy 8 and MoSCoW prioritization to define core features including a matching system, detailed pet profiles, polished and seamless chat interface, and a dynamic calendar that updates with pet-sitting bookings.",
+        "We developed a complete user flow from notification to booking confirmation, creating lo-fi, mid-fi, and hi-fi prototypes with usability testing at each stage to refine the design and ensure optimal user experience.",
+        "The final high-fidelity prototype was well-received by stakeholders during our presentation, successfully demonstrating our user-centered design approach.",
+      ],
+      tools: [
+        "Figma",
+        "UX Research",
+        "Usability Testing",
+        "Persona & Journey Mapping",
+        "MoSCoW Method",
+        "Storytelling",
+        "Presentation",
+      ],
+      link: "https://www.figma.com/proto/KaQrTHXT9ij4DS0zSO2TqP/--P5-Team-1---Design-File?page-id=116%3A21&node-id=7206-5092&viewport=187%2C546%2C0.02&t=eHYs7Xn4FJvx0Trg-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=7206%3A5092",
+      linkText: "Figma prototype",
+
+      mainImage: "/pawmatch1.png",
+      additionalImages: [
+        {
+          src: "/pawmatchchatpage.png",
+          alt: "Screeshot Pawmatch Chat ",
+        },
+        {
+          src: "/pawmatchcalendar.png",
+          alt: "Screeshot Pawmatch calendar ",
+        },
+      ],
+    },
+    {
+      year: "Apr 2025",
       title: "Wellness App",
       description: "UI/UX design",
       storytelling: [
         "For a school project, I designed with another student a mental health app targeting individuals undergoing career transitions, a stressful and often overlooked phase.",
         "We started with a complete UX strategy, including competitive analysis, surveys, and qualitative interviews, which revealed a strong need for emotional support, motivation tools, and community engagement.",
         "Based on our findings, we created a detailed persona and user journey, leading to a prototype focused on personalized routines, a journaling feature, community spaces, and meditation integration.",
-        "User testing confirmed the app’s relevance and usability, with minor adjustments suggested for clarity and mobile optimization. ",
+        "User testing confirmed the app's relevance and usability, with minor adjustments suggested for clarity and mobile optimization. ",
         "The final high-fidelity prototype was positively received and effectively showcased through a narrative-driven presentation highlighting our user-centered design process.",
       ],
       tools: [
@@ -396,30 +431,47 @@ export default function Selectedwork4() {
                       </div>
                     )}
                     {project.additionalImages &&
-                      project.additionalImages.map((img, imgIndex) => (
-                        <Link
-                          key={imgIndex}
-                          href={img.link || "#"}
-                          legacyBehavior
-                          passHref
-                        >
-                          <a
-                            className={styles.timelineImageLink} // Utiliser une autre classe pour le lien
-                            target="_blank"
-                            rel="noopener noreferrer"
+                      project.additionalImages.map((img, imgIndex) =>
+                        img.link ? (
+                          // Si l'image a un lien, l'entourer d'un Link
+                          <Link
+                            key={imgIndex}
+                            href={img.link}
+                            legacyBehavior
+                            passHref
                           >
-                            <div className={styles.timelineImageContainer}>
-                              <Image
-                                src={img.src}
-                                alt={img.alt || project.title}
-                                width={600}
-                                height={360}
-                                className={styles.timelineImage}
-                              />
-                            </div>
-                          </a>
-                        </Link>
-                      ))}
+                            <a
+                              className={styles.timelineImageLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <div className={styles.timelineImageContainer}>
+                                <Image
+                                  src={img.src}
+                                  alt={img.alt || project.title}
+                                  width={600}
+                                  height={360}
+                                  className={styles.timelineImage}
+                                />
+                              </div>
+                            </a>
+                          </Link>
+                        ) : (
+                          // Si l'image n'a pas de lien, l'afficher sans Link
+                          <div
+                            key={imgIndex}
+                            className={styles.timelineImageContainer}
+                          >
+                            <Image
+                              src={img.src}
+                              alt={img.alt || project.title}
+                              width={600}
+                              height={360}
+                              className={styles.timelineImage}
+                            />
+                          </div>
+                        )
+                      )}
                     {project.embed && (
                       <div className={styles.timelineImageContainer}>
                         <iframe
