@@ -118,7 +118,9 @@ export default function Selectedwork4() {
       ],
       link: "https://www.figma.com/proto/KaQrTHXT9ij4DS0zSO2TqP/--P5-Team-1---Design-File?page-id=116%3A21&node-id=7206-5092&viewport=187%2C546%2C0.02&t=eHYs7Xn4FJvx0Trg-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=7206%3A5092",
       linkText: "Figma prototype",
-
+      caseStudyLink:
+        "https://medium.com/@stephane.gioanni/case-study-pawmatch-af0785a53196",
+      caseStudy: "Case study",
       mainImage: "/pawmatch1.png",
       additionalImages: [
         {
