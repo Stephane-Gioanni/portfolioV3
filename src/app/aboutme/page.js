@@ -58,7 +58,7 @@ export default function AboutMe() {
               <br />
               <br />
               In some way, I've always tried to improve or make things
-              beautiful, functional, seamless — to create enjoyable experiences.
+              beautiful, functional, seamless to create enjoyable experiences.
               <br />
               <br />
               Which is, in reality, the very definition of design.
